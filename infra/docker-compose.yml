@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: alerta_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: alerta
+      POSTGRES_PASSWORD: alerta_dev
+      POSTGRES_DB: alerta
+    ports: ["5434:5432"]
+    volumes:
+      - alerta_pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  alerta_pgdata:

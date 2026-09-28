@@ -1,0 +1,39 @@
+[project]
+name = "etl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "leomos2022", email = "leomos2022@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.6",
+    "pandera>=0.33.1",
+    "prefect>=3.8.7",
+    "psycopg[binary]>=3.3.6",
+    "pyarrow>=25.0.1",
+    "python-dotenv>=1.2.3",
+    "sodapy>=2.2.0",
+    "sqlalchemy>=2.1.1",
+]
+
+[project.scripts]
+etl = "etl:main"
+
+[build-system]
+requires = ["uv_build>=0.8.19,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyterlab>=4.6.4",
+    "mypy>=2.3.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.9",
+]
