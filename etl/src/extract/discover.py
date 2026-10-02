@@ -48,7 +48,7 @@ async def main():
     os.makedirs("data/bronze/_meta", exist_ok=True)
     with open("data/bronze/_meta/datasets_discovered.json", "w") as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
-    print(f"\nGuardado en data/bronze/_meta/datasets_discovered.json")
+    print("\nGuardado en data/bronze/_meta/datasets_discovered.json")
 
 
 if __name__ == "__main__":
