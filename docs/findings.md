@@ -151,3 +151,67 @@ Calculo de inversion: ~200h trabajo = ~16M COP. Para recuperar $16M COP:
 - A $29.900/cop: 535 ventas (alcanzable en 12 meses)
 - A $99.000: 162 ventas (alcanzable en 6 meses)
 - A $299.000: 54 ventas institucionales (factible en 12-18 meses)
+
+
+---
+
+## Fuentes de datos identificadas (research externo)
+
+Adicionalmente a la busqueda automatica en datos.gov.co, se identificaron las siguientes fuentes oficiales para datos sobre desercion estudiantil:
+
+### SPADIES - Sistema para la Prevencion de la Desercion de la Educacion Superior
+
+- **URL**: https://spadies.mineducacion.gov.co
+- **Propietario**: Ministerio de Educacion Nacional (MEN)
+- **Que contiene**: Tasas de desercion oficiales por periodo, institucion, programa academico y genero. Incluye factores de riesgo.
+- **Importancia**: CRITICA - es la fuente oficial para desercion. Sin SPADIES no se puede calcular la tasa real de desercion.
+- **Estado**: Por investigar disponibilidad de descarga programatica (posiblemente requiere scraping o descarga manual).
+
+### SINEB - Sistema Nacional de Informacion de Educacion Basica y Media
+
+- **URL**: Datos disponibles en datos.gov.co (busqueda pendiente)
+- **Propietario**: MEN
+- **Que contiene**: Cifras de abandono escolar, aprobaciones y reprobaciones en colegios publicos y privados (pre-escolar, basica y media).
+- **Importancia**: Baja para este proyecto (foco es educacion superior, no basica). Posible uso para analisis comparativo o contextual.
+- **Estado**: No prioritario.
+
+### Datos Abiertos Bogota
+
+- **URL**: https://datosabiertos.bogota.gov.co
+- **Propietario**: Alcaldia Mayor de Bogota
+- **Que contiene**: Tasas de desercion por localidad o UPZ (nivel territorial urbano).
+- **Importancia**: Bonus para analisis territorial focalizado en Bogota.
+- **Estado**: Bonus, no prioritario para MVP nacional.
+
+### Estrategia de integracion propuesta
+
+1. **MVP (ahora)**: Dataset de matriculados del SNIES en datos.gov.co (ya descargado, silver layer lista).
+2. **Fase 2 (siguiente)**: Integrar SPADIES para tasas de desercion oficiales. Esto desbloquea el calculo real de KPIs de desercion.
+3. **Fase 3 (posterior)**: SINEB para contexto de educacion basica/media.
+4. **Fase 4 (opcional)**: Datos Abiertos Bogota para nivel territorial fino.
+
+### Busqueda en datos.gov.co - RESULTADO NEGATIVO
+
+Se buscaron las siguientes keywords en el catalogo de datos.gov.co (Socrata API v1):
+
+| Keyword | Resultados | Encontrado nacional? |
+|---|---|---|
+| "SPADIES" | 0 | No |
+| "desercion" | 30 | No (todos especificos a IES/ciudades) |
+| "tasa desercion" | 28 | No (todos educacion basica/media) |
+| "prevencion desercion" | 0 | No |
+| "desercion educacion superior" | 21 | No (todos basic/media) |
+
+**Candidatos inspeccionados y descartados**:
+
+- `3iew-7wpx` - "DESERCION ACADEMICA PREGRADO Y POSGRADO" - Especifico a UPTC (Universidad Pedagogica y Tecnologica de Colombia). Contiene microdata con PII (fecha de nacimiento).
+- `68eb-25rj` - "Desercion educativa" - Especifico a Medellin, mide grados K-12 (no educacion superior).
+
+**Conclusion confirmada**: NO existe dataset nacional de desercion en educacion superior en datos.gov.co.
+
+**Siguiente paso necesario**: Acceso directo a SPADIES via:
+1. Web scraping de https://spadies.mineducacion.gov.co (requiere browser automation con Playwright)
+2. Descarga manual de reportes PDF/Excel publicados por el MEN
+3. Contacto directo al MEN para solicitar acceso a datos abiertos de SPADIES
+
+Esta limitacion se documenta en el README del portafolio como decision tecnica con justificacion.
