@@ -215,3 +215,56 @@ Se buscaron las siguientes keywords en el catalogo de datos.gov.co (Socrata API 
 3. Contacto directo al MEN para solicitar acceso a datos abiertos de SPADIES
 
 Esta limitacion se documenta en el README del portafolio como decision tecnica con justificacion.
+
+
+---
+
+## BREAKTHROUGH: SPADIES oficial descargado (2026-10-02)
+
+Se encontro la URL correcta del articulo SPADIES en el sitio del MEN:
+- URL base: https://www.mineducacion.gov.co/sistemasdeinformacion/1783/
+- Articulo: w3-article-415244.html (Estadisticas de desercion y permanencia)
+- Se descargaron:
+  - recurso_18.xlsx (867 KB) - Datos por IES especifica
+  - recurso_19.xlsx (9.6 MB) - Datos nacionales por cortes
+  - metodologia.pdf (233 KB) - Documento de cambio metodologico SPADIES 3
+  - 5 PNGs con graficos (29K-49K cada uno)
+
+### Metricas SPADIES obtenidas (oficiales, corte estadistico 2025):
+
+1. **TDA** (Tasa de Desercion Anual) - por sexo, sector, area conocimiento, departamento, metodologia, nivel formacion, IES
+2. **TAI** (Tasa de Ausencia Intersemestral) - mismas dimensiones
+3. **TDCA** (Tasa de Desercion Cohorte Acumulada) - mismas dimensiones
+4. **TGA** (Tasa de Graduacion Acumulada) - mismas dimensiones
+
+### Datos REALES extraidos (TDA por nivel de formacion, 2010-2024):
+
+| Nivel | 2010 | 2015 | 2019 | 2020 | 2021 | 2024 |
+|---|---|---|---|---|---|---|
+| Universitario | 9.9% | 9.0% | 8.3% | 8.0% | 8.9% | 8.6% |
+| Tecnologico/Tecnico (TyT) | 19.5% | 13.4% | 14.8% | 13.4% | 16.5% | 15.7% |
+| Tecnico profesional | 22.5% | 21.4% | 18.0% | 13.6% | 18.8% | 17.0% |
+
+### Notas metodologicas importantes:
+
+- "A partir del ano 2019 se excluye para los calculos de los indicadores de Tasa de Desercion Anual y Tasa de Ausencia Intersemestral en el nivel tecnologico el SENA"
+- Esto significa que comparar 2018 vs 2019+ en TyT requiere ajuste metodologico
+- Corte estadistico de 2025 (datos mas recientes publicados)
+
+### Implicacion para el proyecto:
+
+Esto es GAME CHANGER. Ahora tenemos:
+- 15 anos de datos oficiales (2010-2024)
+- 4 metricas con cortes por 6+ dimensiones (sexo, sector, area, depto, etc.)
+- Datos desagregados por IES especifica (300+ instituciones)
+- Datos REALES de COVID 2020-2021 (no afectados por sub-reporte del dataset matriculados)
+
+Podemos calcular TODOS los KPIs necesarios para el proyecto:
+- Tasa de desercion anual nacional
+- Desercion por nivel formacion, sector, departamento, sexo
+- Comparacion pre/post COVID
+- Ranking de IES por desercion
+- Tasa de graduacion acumulada
+- Analsis de cohorte (TDCA)
+
+El dataset de matriculados de datos.gov.co queda como complemento territorial, pero SPADIES es la fuente principal ahora.
