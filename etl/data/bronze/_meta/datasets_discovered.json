@@ -1,0 +1,714 @@
+[
+  {
+    "id": "dxq5-s8zz",
+    "name": "UCEVA Participantes reporte SNIES 2020",
+    "type": "dataset",
+    "updated_at": "2026-05-18T16:37:18.000Z",
+    "page_url": "https://www.datos.gov.co/d/dxq5-s8zz",
+    "download_url": "https://www.datos.gov.co/Educación/UCEVA-Participantes-reporte-SNIES-2020/dxq5-s8zz"
+  },
+  {
+    "id": "5mbr-qnah",
+    "name": "UCEVA Participantes reporte SNIES 2021",
+    "type": "dataset",
+    "updated_at": "2026-05-18T19:06:46.000Z",
+    "page_url": "https://www.datos.gov.co/d/5mbr-qnah",
+    "download_url": "https://www.datos.gov.co/Educación/UCEVA-Participantes-reporte-SNIES-2021/5mbr-qnah"
+  },
+  {
+    "id": "frsa-ad27",
+    "name": "Admitidos Estudiantes Unillanos",
+    "type": "dataset",
+    "updated_at": "2026-09-15T14:15:21.000Z",
+    "page_url": "https://www.datos.gov.co/d/frsa-ad27",
+    "download_url": "https://www.datos.gov.co/Educación/Admitidos-Estudiantes-Unillanos/frsa-ad27"
+  },
+  {
+    "id": "uun2-9uuk",
+    "name": "Estudiantes matriculados del Politécnico Colombiano Jaime Isaza Cadavid",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:22:08.000Z",
+    "page_url": "https://www.datos.gov.co/d/uun2-9uuk",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-matriculados-del-Politécnico-Colombian/uun2-9uuk"
+  },
+  {
+    "id": "m6p7-dubw",
+    "name": "Inscritos Programas de Pregrado y Posgrado Universidad de Sucre",
+    "type": "dataset",
+    "updated_at": "2026-05-18T17:14:39.000Z",
+    "page_url": "https://www.datos.gov.co/d/m6p7-dubw",
+    "download_url": "https://www.datos.gov.co/Educación/Inscritos-Programas-de-Pregrado-y-Posgrado-Univers/m6p7-dubw"
+  },
+  {
+    "id": "n5yy-8nav",
+    "name": "MEN_INSTITUCIONES EDUCACIÓN SUPERIOR",
+    "type": "dataset",
+    "updated_at": "2026-09-25T04:10:44.000Z",
+    "page_url": "https://www.datos.gov.co/d/n5yy-8nav",
+    "download_url": "https://www.datos.gov.co/Educación/MEN_INSTITUCIONES-EDUCACIÓN-SUPERIOR/n5yy-8nav"
+  },
+  {
+    "id": "3j5e-x7c4",
+    "name": "Estudiantes Graduados UNAL",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:09:18.000Z",
+    "page_url": "https://www.datos.gov.co/d/3j5e-x7c4",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-Graduados-UNAL/3j5e-x7c4"
+  },
+  {
+    "id": "ppnk-a92y",
+    "name": "Estudiantes Admitidos en Programas Académicos - Institución Universitaria Colegio Mayor de Antioquia",
+    "type": "dataset",
+    "updated_at": "2026-05-18T19:21:20.000Z",
+    "page_url": "https://www.datos.gov.co/d/ppnk-a92y",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-Admitidos-en-Programas-Académicos-Inst/ppnk-a92y"
+  },
+  {
+    "id": "pp6t-bhez",
+    "name": "Listado de Graduados Programas de Pregrado y Posgrado Universidad de Sucre",
+    "type": "dataset",
+    "updated_at": "2026-05-18T17:49:43.000Z",
+    "page_url": "https://www.datos.gov.co/d/pp6t-bhez",
+    "download_url": "https://www.datos.gov.co/Educación/Listado-de-Graduados-Programas-de-Pregrado-y-Posgr/pp6t-bhez"
+  },
+  {
+    "id": "bgak-23r3",
+    "name": "Programas Ofrecidos por la Universidad Colegio Mayor de Cundinamarca",
+    "type": "dataset",
+    "updated_at": "2026-05-18T19:23:20.000Z",
+    "page_url": "https://www.datos.gov.co/d/bgak-23r3",
+    "download_url": "https://www.datos.gov.co/Educación/Programas-Ofrecidos-por-la-Universidad-Colegio-May/bgak-23r3"
+  },
+  {
+    "id": "5mg2-9qev",
+    "name": "Instituciones de Educación Superior en Medellín",
+    "type": "federated_href",
+    "updated_at": "2025-10-31T19:42:39.000Z",
+    "page_url": "https://www.datos.gov.co/d/5mg2-9qev",
+    "download_url": "https://www.datos.gov.co/dataset/Instituciones-de-Educación-Superior-en-Medellín/5mg2-9qev"
+  },
+  {
+    "id": "muyy-6yw9",
+    "name": "MEN_DIRECTIVOS_DE_INSTITUCIONES_DE_EDUCACIÓN_SUPERIOR",
+    "type": "dataset",
+    "updated_at": "2026-05-18T19:23:48.000Z",
+    "page_url": "https://www.datos.gov.co/d/muyy-6yw9",
+    "download_url": "https://www.datos.gov.co/Educación/MEN_DIRECTIVOS_DE_INSTITUCIONES_DE_EDUCACIÓN_SUPER/muyy-6yw9"
+  },
+  {
+    "id": "f3ix-53np",
+    "name": "INSCRITOS",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:07:32.000Z",
+    "page_url": "https://www.datos.gov.co/d/f3ix-53np",
+    "download_url": "https://www.datos.gov.co/Educación/INSCRITOS/f3ix-53np"
+  },
+  {
+    "id": "5wck-szir",
+    "name": "MEN_MATRICULA_ESTADISTICA_ES",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:28:08.000Z",
+    "page_url": "https://www.datos.gov.co/d/5wck-szir",
+    "download_url": "https://www.datos.gov.co/Educación/MEN_MATRICULA_ESTADISTICA_ES/5wck-szir"
+  },
+  {
+    "id": "xt95-frxh",
+    "name": "Estudiantes admitidos programas de pregrado y posgrado Universidad de Sucre",
+    "type": "dataset",
+    "updated_at": "2026-05-18T17:11:17.000Z",
+    "page_url": "https://www.datos.gov.co/d/xt95-frxh",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-admitidos-programas-de-pregrado-y-posg/xt95-frxh"
+  },
+  {
+    "id": "k4g2-t46n",
+    "name": "GRADUADOS IUB",
+    "type": "dataset",
+    "updated_at": "2026-07-09T13:52:12.000Z",
+    "page_url": "https://www.datos.gov.co/d/k4g2-t46n",
+    "download_url": "https://www.datos.gov.co/Educación/GRADUADOS-IUB/k4g2-t46n"
+  },
+  {
+    "id": "5pqr-ifsd",
+    "name": "Estudiantes matriculados UNAL",
+    "type": "dataset",
+    "updated_at": "2026-05-18T19:07:33.000Z",
+    "page_url": "https://www.datos.gov.co/d/5pqr-ifsd",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-matriculados-UNAL/5pqr-ifsd"
+  },
+  {
+    "id": "mqpd-2jhs",
+    "name": "Microdatos Aspirantes y Admitidos en la UNAL",
+    "type": "dataset",
+    "updated_at": "2026-05-18T16:40:00.000Z",
+    "page_url": "https://www.datos.gov.co/d/mqpd-2jhs",
+    "download_url": "https://www.datos.gov.co/Educación/Microdatos-Aspirantes-y-Admitidos-en-la-UNAL/mqpd-2jhs"
+  },
+  {
+    "id": "y5gw-n735",
+    "name": "Estudiantes Admitidos en Programas Académicos - Institución Universitaria Colegio Mayor de Antioquia",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:27:53.000Z",
+    "page_url": "https://www.datos.gov.co/d/y5gw-n735",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-Admitidos-en-Programas-Académicos-Inst/y5gw-n735"
+  },
+  {
+    "id": "asjg-76ya",
+    "name": "Universidades Principales y Seccionales en el Distrito de Barranquilla",
+    "type": "dataset",
+    "updated_at": "2026-05-18T16:53:35.000Z",
+    "page_url": "https://www.datos.gov.co/d/asjg-76ya",
+    "download_url": "https://www.datos.gov.co/Educación/Universidades-Principales-y-Seccionales-en-el-Dist/asjg-76ya"
+  },
+  {
+    "id": "g6ci-7e9g",
+    "name": "Microdatos Resultados Prueba Saber Pro UNAL",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:09:36.000Z",
+    "page_url": "https://www.datos.gov.co/d/g6ci-7e9g",
+    "download_url": "https://www.datos.gov.co/Educación/Microdatos-Resultados-Prueba-Saber-Pro-UNAL/g6ci-7e9g"
+  },
+  {
+    "id": "y8vy-jh2e",
+    "name": "Graduados Colegio Mayor de Antioquia",
+    "type": "dataset",
+    "updated_at": "2026-05-18T17:33:38.000Z",
+    "page_url": "https://www.datos.gov.co/d/y8vy-jh2e",
+    "download_url": "https://www.datos.gov.co/Educación/Graduados-Colegio-Mayor-de-Antioquia/y8vy-jh2e"
+  },
+  {
+    "id": "8r4y-btdg",
+    "name": "Estudiantes Matriculados en Programas Académicos - Institución Universitaria Colegio Mayor de Antioquia",
+    "type": "dataset",
+    "updated_at": "2026-05-18T16:57:08.000Z",
+    "page_url": "https://www.datos.gov.co/d/8r4y-btdg",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-Matriculados-en-Programas-Académicos-I/8r4y-btdg"
+  },
+  {
+    "id": "42gh-fc32",
+    "name": "Vista - educación - Tolima",
+    "type": "filter",
+    "updated_at": "2025-12-19T22:40:33.000Z",
+    "page_url": "https://www.datos.gov.co/d/42gh-fc32",
+    "download_url": "https://www.datos.gov.co/Educación/Vista-educación-Tolima/42gh-fc32"
+  },
+  {
+    "id": "dy92-n85k",
+    "name": "Admitidos Institución Universitaria Mayor de Cartagena.",
+    "type": "dataset",
+    "updated_at": "2026-08-12T13:36:11.000Z",
+    "page_url": "https://www.datos.gov.co/d/dy92-n85k",
+    "download_url": "https://www.datos.gov.co/Educación/Admitidos-Institución-Universitaria-Mayor-de-Carta/dy92-n85k"
+  },
+  {
+    "id": "cp44-np4f",
+    "name": "Admitidos",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:27:24.000Z",
+    "page_url": "https://www.datos.gov.co/d/cp44-np4f",
+    "download_url": "https://www.datos.gov.co/Educación/Admitidos/cp44-np4f"
+  },
+  {
+    "id": "dv2d-ud46",
+    "name": "Estudiantes Matriculados en Programas Académicos - Institución Universitaria Colegio Mayor de Antioquia",
+    "type": "dataset",
+    "updated_at": "2026-05-18T16:37:12.000Z",
+    "page_url": "https://www.datos.gov.co/d/dv2d-ud46",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-Matriculados-en-Programas-Académicos-I/dv2d-ud46"
+  },
+  {
+    "id": "94br-9cfg",
+    "name": "Matriculados Primer Curso IUB",
+    "type": "dataset",
+    "updated_at": "2026-07-09T13:46:55.000Z",
+    "page_url": "https://www.datos.gov.co/d/94br-9cfg",
+    "download_url": "https://www.datos.gov.co/Educación/Matriculados-Primer-Curso-IUB/94br-9cfg"
+  },
+  {
+    "id": "9ywd-asvr",
+    "name": "Inscritos Institución Universitaria Mayor de Cartagena",
+    "type": "dataset",
+    "updated_at": "2026-08-12T13:23:06.000Z",
+    "page_url": "https://www.datos.gov.co/d/9ywd-asvr",
+    "download_url": "https://www.datos.gov.co/Educación/Inscritos-Institución-Universitaria-Mayor-de-Carta/9ywd-asvr"
+  },
+  {
+    "id": "4idh-mszh",
+    "name": "ADMITIDOS",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:28:08.000Z",
+    "page_url": "https://www.datos.gov.co/d/4idh-mszh",
+    "download_url": "https://www.datos.gov.co/Educación/ADMITIDOS/4idh-mszh"
+  },
+  {
+    "id": "uus8-kgb7",
+    "name": "INSTITUCIONES EDUCACIÓN SUPERIOR EN RISARALDA",
+    "type": "filter",
+    "updated_at": "2026-05-18T18:26:20.000Z",
+    "page_url": "https://www.datos.gov.co/d/uus8-kgb7",
+    "download_url": "https://www.datos.gov.co/Educación/INSTITUCIONES-EDUCACIÓN-SUPERIOR-EN-RISARALDA/uus8-kgb7"
+  },
+  {
+    "id": "9856-w5h6",
+    "name": "Inscritos a programas Colegio Mayor de Antioquia",
+    "type": "dataset",
+    "updated_at": "2026-05-18T16:52:59.000Z",
+    "page_url": "https://www.datos.gov.co/d/9856-w5h6",
+    "download_url": "https://www.datos.gov.co/Educación/Inscritos-a-programas-Colegio-Mayor-de-Antioquia/9856-w5h6"
+  },
+  {
+    "id": "n42m-gbfe",
+    "name": "Admitidos Universidad Internacional del Trópico Americano",
+    "type": "dataset",
+    "updated_at": "2026-05-18T19:16:59.000Z",
+    "page_url": "https://www.datos.gov.co/d/n42m-gbfe",
+    "download_url": "https://www.datos.gov.co/Educación/Admitidos-Universidad-Internacional-del-Trópico-Am/n42m-gbfe"
+  },
+  {
+    "id": "r6vm-jd9k",
+    "name": "Estudiantes Admitidos en Programas Académicos - Institución Universitaria Colegio Mayor de Antioquia",
+    "type": "dataset",
+    "updated_at": "2026-05-18T17:44:58.000Z",
+    "page_url": "https://www.datos.gov.co/d/r6vm-jd9k",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-Admitidos-en-Programas-Académicos-Inst/r6vm-jd9k"
+  },
+  {
+    "id": "5z5m-87g7",
+    "name": "VISTA_MEN_MATRICULA-ESTADISTICA, CONTIENE LA MATRÍCULA ESTADÍSTICA DE EDUCACIÓN SUPERIOR",
+    "type": "filter",
+    "updated_at": "2026-05-18T17:32:05.000Z",
+    "page_url": "https://www.datos.gov.co/d/5z5m-87g7",
+    "download_url": "https://www.datos.gov.co/Educación/VISTA_MEN_MATRICULA-ESTADISTICA-CONTIENE-LA-MATRÍC/5z5m-87g7"
+  },
+  {
+    "id": "w388-nxwx",
+    "name": "tabla de contenido",
+    "type": "filter",
+    "updated_at": "2025-12-19T23:06:29.000Z",
+    "page_url": "https://www.datos.gov.co/d/w388-nxwx",
+    "download_url": "https://www.datos.gov.co/Educación/tabla-de-contenido/w388-nxwx"
+  },
+  {
+    "id": "e72w-3pr7",
+    "name": "Odontologia matriculados",
+    "type": "filter",
+    "updated_at": "2025-12-19T23:30:42.000Z",
+    "page_url": "https://www.datos.gov.co/d/e72w-3pr7",
+    "download_url": "https://www.datos.gov.co/Educación/Odontologia-matriculados/e72w-3pr7"
+  },
+  {
+    "id": "u7yk-ayuf",
+    "name": "IES trabajo microeconomia",
+    "type": "filter",
+    "updated_at": "2025-12-19T22:45:11.000Z",
+    "page_url": "https://www.datos.gov.co/d/u7yk-ayuf",
+    "download_url": "https://www.datos.gov.co/Educación/IES-trabajo-microeconomia/u7yk-ayuf"
+  },
+  {
+    "id": "recv-c699",
+    "name": "Matriculas Cali",
+    "type": "filter",
+    "updated_at": "2025-12-19T23:05:54.000Z",
+    "page_url": "https://www.datos.gov.co/d/recv-c699",
+    "download_url": "https://www.datos.gov.co/Educación/Matriculas-Cali/recv-c699"
+  },
+  {
+    "id": "297s-jh72",
+    "name": "Fotografia Colombia",
+    "type": "filter",
+    "updated_at": "2025-12-19T23:17:08.000Z",
+    "page_url": "https://www.datos.gov.co/d/297s-jh72",
+    "download_url": "https://www.datos.gov.co/Educación/Fotografia-Colombia/297s-jh72"
+  },
+  {
+    "id": "qcqc-aru8",
+    "name": "VISTA Estadística-Matricula Universidad de La Guajira",
+    "type": "filter",
+    "updated_at": "2026-05-18T16:31:16.000Z",
+    "page_url": "https://www.datos.gov.co/d/qcqc-aru8",
+    "download_url": "https://www.datos.gov.co/Educación/VISTA-Estadística-Matricula-Universidad-de-La-Guaj/qcqc-aru8"
+  },
+  {
+    "id": "qhbe-4ffq",
+    "name": "Graduados Institución Universitaria Mayor de Cartagena",
+    "type": "dataset",
+    "updated_at": "2026-08-12T14:27:57.000Z",
+    "page_url": "https://www.datos.gov.co/d/qhbe-4ffq",
+    "download_url": "https://www.datos.gov.co/Educación/Graduados-Institución-Universitaria-Mayor-de-Carta/qhbe-4ffq"
+  },
+  {
+    "id": "jegm-in9m",
+    "name": "Inscritos",
+    "type": "dataset",
+    "updated_at": "2026-05-18T16:26:14.000Z",
+    "page_url": "https://www.datos.gov.co/d/jegm-in9m",
+    "download_url": "https://www.datos.gov.co/Educación/Inscritos/jegm-in9m"
+  },
+  {
+    "id": "mhwn-8nsy",
+    "name": "VISTA_MEN - MATRICULA ESTADISTICA, CONTIENE LA MATRÍCULA ESTADÍSTICA DE EDUCACIÓN SUPERIOR DESDE EL 2015 HASTA EL 2020.",
+    "type": "filter",
+    "updated_at": "2026-05-18T16:51:44.000Z",
+    "page_url": "https://www.datos.gov.co/d/mhwn-8nsy",
+    "download_url": "https://www.datos.gov.co/Educación/VISTA_MEN-MATRICULA-ESTADISTICA-CONTIENE-LA-MATRÍC/mhwn-8nsy"
+  },
+  {
+    "id": "u37r-hjmu",
+    "name": "Resultados únicos Saber Pro",
+    "type": "dataset",
+    "updated_at": "2026-09-19T17:47:41.000Z",
+    "page_url": "https://www.datos.gov.co/d/u37r-hjmu",
+    "download_url": "https://www.datos.gov.co/Educación/Resultados-únicos-Saber-Pro/u37r-hjmu"
+  },
+  {
+    "id": "6rvy-hipa",
+    "name": "Microdatos Personal Administrativo UNAL",
+    "type": "dataset",
+    "updated_at": "2026-05-18T17:15:29.000Z",
+    "page_url": "https://www.datos.gov.co/d/6rvy-hipa",
+    "download_url": "https://www.datos.gov.co/Educación/Microdatos-Personal-Administrativo-UNAL/6rvy-hipa"
+  },
+  {
+    "id": "s6fh-jpim",
+    "name": "Matriculados Institución Universitaria Mayor de Cartagena",
+    "type": "dataset",
+    "updated_at": "2026-08-12T14:11:37.000Z",
+    "page_url": "https://www.datos.gov.co/d/s6fh-jpim",
+    "download_url": "https://www.datos.gov.co/Educación/Matriculados-Institución-Universitaria-Mayor-de-Ca/s6fh-jpim"
+  },
+  {
+    "id": "8p5a-4krh",
+    "name": "Oferta Académica Dirección de Educación Policial",
+    "type": "dataset",
+    "updated_at": "2026-09-03T20:23:55.000Z",
+    "page_url": "https://www.datos.gov.co/d/8p5a-4krh",
+    "download_url": "https://www.datos.gov.co/Educación/Oferta-Académica-Dirección-de-Educación-Policial/8p5a-4krh"
+  },
+  {
+    "id": "ejfi-85pi",
+    "name": "VISTA_Matrícula estadística de educación superior en el Departamento del Caquetá.",
+    "type": "filter",
+    "updated_at": "2026-05-18T17:53:45.000Z",
+    "page_url": "https://www.datos.gov.co/d/ejfi-85pi",
+    "download_url": "https://www.datos.gov.co/Educación/VISTA_Matrícula-estadística-de-educación-superior-/ejfi-85pi"
+  },
+  {
+    "id": "ei5d-33fw",
+    "name": "acabreran",
+    "type": "filter",
+    "updated_at": "2025-12-19T23:25:05.000Z",
+    "page_url": "https://www.datos.gov.co/d/ei5d-33fw",
+    "download_url": "https://www.datos.gov.co/Educación/acabreran/ei5d-33fw"
+  },
+  {
+    "id": "nudc-7mev",
+    "name": "MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR, BÁSICA Y MEDIA_POR_MUNICIPIO",
+    "type": "dataset",
+    "updated_at": "2026-09-17T20:46:44.000Z",
+    "page_url": "https://www.datos.gov.co/d/nudc-7mev",
+    "download_url": "https://www.datos.gov.co/Educación/MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-BÁSICA/nudc-7mev"
+  },
+  {
+    "id": "sras-4t5p",
+    "name": "MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR, BÁSICA Y MEDIA_POR_ETC",
+    "type": "dataset",
+    "updated_at": "2026-05-18T19:04:14.000Z",
+    "page_url": "https://www.datos.gov.co/d/sras-4t5p",
+    "download_url": "https://www.datos.gov.co/Educación/MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-BÁSICA/sras-4t5p"
+  },
+  {
+    "id": "ji8i-4anb",
+    "name": "MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR, BÁSICA Y MEDIA_POR_DEPARTAMENTO",
+    "type": "dataset",
+    "updated_at": "2026-05-18T17:52:08.000Z",
+    "page_url": "https://www.datos.gov.co/d/ji8i-4anb",
+    "download_url": "https://www.datos.gov.co/Educación/MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-BÁSICA/ji8i-4anb"
+  },
+  {
+    "id": "5f3a-r7ic",
+    "name": "TOTAL ESTUDIANTES MATRICULADOS DE LA UNIVERSIDAD DEL VALLE",
+    "type": "dataset",
+    "updated_at": "2026-09-28T12:31:04.000Z",
+    "page_url": "https://www.datos.gov.co/d/5f3a-r7ic",
+    "download_url": "https://www.datos.gov.co/Educación/TOTAL-ESTUDIANTES-MATRICULADOS-DE-LA-UNIVERSIDAD-D/5f3a-r7ic"
+  },
+  {
+    "id": "7kdd-hqtd",
+    "name": "Cantidad de matriculados por programa académico y año",
+    "type": "chart",
+    "updated_at": "2025-12-19T23:03:13.000Z",
+    "page_url": "https://www.datos.gov.co/d/7kdd-hqtd",
+    "download_url": "https://www.datos.gov.co/Educación/Cantidad-de-matriculados-por-programa-académico-y-/7kdd-hqtd"
+  },
+  {
+    "id": "bthp-b7qp",
+    "name": "Matriculados Tecnologico de Artes Debora Arango 2019-2025-2",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:11:41.000Z",
+    "page_url": "https://www.datos.gov.co/d/bthp-b7qp",
+    "download_url": "https://www.datos.gov.co/Educación/Matriculados-Tecnologico-de-Artes-Debora-Arango-20/bthp-b7qp"
+  },
+  {
+    "id": "cxyf-vhra",
+    "name": "Matriculados por Programa de la Institución Universitaria Colegio Mayor del Cauca",
+    "type": "dataset",
+    "updated_at": "2026-09-23T20:21:09.000Z",
+    "page_url": "https://www.datos.gov.co/d/cxyf-vhra",
+    "download_url": "https://www.datos.gov.co/Educación/Matriculados-por-Programa-de-la-Institución-Univer/cxyf-vhra"
+  },
+  {
+    "id": "8smy-rxaf",
+    "name": "Matriculados por programa por año",
+    "type": "chart",
+    "updated_at": "2026-05-18T19:21:10.000Z",
+    "page_url": "https://www.datos.gov.co/d/8smy-rxaf",
+    "download_url": "https://www.datos.gov.co/Educación/Matriculados-por-programa-por-año/8smy-rxaf"
+  },
+  {
+    "id": "t53t-8bwp",
+    "name": "Matrículas profesionales",
+    "type": "dataset",
+    "updated_at": "2026-05-18T16:57:52.000Z",
+    "page_url": "https://www.datos.gov.co/d/t53t-8bwp",
+    "download_url": "https://www.datos.gov.co/Organismos-de-Control/Matrículas-profesionales/t53t-8bwp"
+  },
+  {
+    "id": "ay7y-bg6k",
+    "name": "Estadísticas en Educación Preescolar, Básica y Media para los Municipios del Departamento del Huila",
+    "type": "filter",
+    "updated_at": "2026-05-18T16:57:54.000Z",
+    "page_url": "https://www.datos.gov.co/d/ay7y-bg6k",
+    "download_url": "https://www.datos.gov.co/Educación/Estadísticas-en-Educación-Preescolar-Básica-y-Medi/ay7y-bg6k"
+  },
+  {
+    "id": "h7f2-yp5t",
+    "name": "VISTA_MEN ESTADISTICAS EN EDUCACION EN PREESCOLAR, BÁSICA Y MEDIA POR MUNICIPIO DEL DEPARTAMENTO DEL CAQUETÁ",
+    "type": "filter",
+    "updated_at": "2026-05-18T17:13:03.000Z",
+    "page_url": "https://www.datos.gov.co/d/h7f2-yp5t",
+    "download_url": "https://www.datos.gov.co/Educación/VISTA_MEN-ESTADISTICAS-EN-EDUCACION-EN-PREESCOLAR-/h7f2-yp5t"
+  },
+  {
+    "id": "s32h-3knx",
+    "name": "Estadísticas Educación Preescolar, Básica y Media Departamento de Antioquia",
+    "type": "filter",
+    "updated_at": "2026-05-18T18:43:02.000Z",
+    "page_url": "https://www.datos.gov.co/d/s32h-3knx",
+    "download_url": "https://www.datos.gov.co/Educación/Estadísticas-Educación-Preescolar-Básica-y-Media-D/s32h-3knx"
+  },
+  {
+    "id": "jy9a-ve59",
+    "name": "Estudiantes Matriculados en Programas Académicos - Institución Universitaria Colegio Mayor de Antioquia",
+    "type": "dataset",
+    "updated_at": "2026-05-18T17:09:53.000Z",
+    "page_url": "https://www.datos.gov.co/d/jy9a-ve59",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-Matriculados-en-Programas-Académicos-I/jy9a-ve59"
+  },
+  {
+    "id": "tu2k-pzxv",
+    "name": "VISTA_MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR, BÁSICA Y MEDIA_POR_DEPARTAMENTO",
+    "type": "filter",
+    "updated_at": "2026-05-18T18:24:13.000Z",
+    "page_url": "https://www.datos.gov.co/d/tu2k-pzxv",
+    "download_url": "https://www.datos.gov.co/Educación/VISTA_MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-/tu2k-pzxv"
+  },
+  {
+    "id": "t2ci-jbfe",
+    "name": "Estadistica Cobertura Educacion Riohacha",
+    "type": "filter",
+    "updated_at": "2026-05-18T17:51:19.000Z",
+    "page_url": "https://www.datos.gov.co/d/t2ci-jbfe",
+    "download_url": "https://www.datos.gov.co/Educación/Estadistica-Cobertura-Educacion-Riohacha/t2ci-jbfe"
+  },
+  {
+    "id": "5jvr-vi2n",
+    "name": "Vista Estadísticas en Educación Preescolar, Básica y Media en el Municipio de Puerres Nariño",
+    "type": "filter",
+    "updated_at": "2026-05-18T17:10:44.000Z",
+    "page_url": "https://www.datos.gov.co/d/5jvr-vi2n",
+    "download_url": "https://www.datos.gov.co/Educación/Vista-Estadísticas-en-Educación-Preescolar-Básica-/5jvr-vi2n"
+  },
+  {
+    "id": "4aj7-rd6t",
+    "name": "ESTADISTICAS EN EDUCACION PREESCOLAR, BASICA Y MEDIA EN EL DEPARTAMENTO DE RISARALDA",
+    "type": "filter",
+    "updated_at": "2026-05-18T16:57:42.000Z",
+    "page_url": "https://www.datos.gov.co/d/4aj7-rd6t",
+    "download_url": "https://www.datos.gov.co/Educación/ESTADISTICAS-EN-EDUCACION-PREESCOLAR-BASICA-Y-MEDI/4aj7-rd6t"
+  },
+  {
+    "id": "kpqg-p6un",
+    "name": "Matriculados",
+    "type": "dataset",
+    "updated_at": "2026-07-29T21:28:15.000Z",
+    "page_url": "https://www.datos.gov.co/d/kpqg-p6un",
+    "download_url": "https://www.datos.gov.co/Educación/Matriculados/kpqg-p6un"
+  },
+  {
+    "id": "jkc9-k9rs",
+    "name": "ESTADÍSTICA EN EDUCACIÓN EN PREESCOLAR, BÁSICA Y MEDIA DEL MUNICIPIO DE PITALITO",
+    "type": "filter",
+    "updated_at": "2026-05-18T19:23:20.000Z",
+    "page_url": "https://www.datos.gov.co/d/jkc9-k9rs",
+    "download_url": "https://www.datos.gov.co/Educación/ESTADÍSTICA-EN-EDUCACIÓN-EN-PREESCOLAR-BÁSICA-Y-ME/jkc9-k9rs"
+  },
+  {
+    "id": "kzv7-8maf",
+    "name": "ESTADISTICAS EN EDUCACION PREESCOLAR, BASICA Y MEDIA  MONGUA",
+    "type": "filter",
+    "updated_at": "2026-05-18T19:22:24.000Z",
+    "page_url": "https://www.datos.gov.co/d/kzv7-8maf",
+    "download_url": "https://www.datos.gov.co/Educación/ESTADISTICAS-EN-EDUCACION-PREESCOLAR-BASICA-Y-MEDI/kzv7-8maf"
+  },
+  {
+    "id": "vjj3-z4z2",
+    "name": "ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR, BÁSICA Y MEDIA_MAICAO",
+    "type": "filter",
+    "updated_at": "2026-05-18T16:41:47.000Z",
+    "page_url": "https://www.datos.gov.co/d/vjj3-z4z2",
+    "download_url": "https://www.datos.gov.co/Educación/ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-BÁSICA-Y-M/vjj3-z4z2"
+  },
+  {
+    "id": "hizz-wfet",
+    "name": "Estadísticas en Educación Preescolar, Básica y Media para el Departamento del Huila",
+    "type": "filter",
+    "updated_at": "2026-05-18T17:32:45.000Z",
+    "page_url": "https://www.datos.gov.co/d/hizz-wfet",
+    "download_url": "https://www.datos.gov.co/Educación/Estadísticas-en-Educación-Preescolar-Básica-y-Medi/hizz-wfet"
+  },
+  {
+    "id": "nhmn-fiw8",
+    "name": "VISTA_MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR, BÁSICA Y MEDIA_POR_MUNICIPIO",
+    "type": "filter",
+    "updated_at": "2026-05-18T18:44:03.000Z",
+    "page_url": "https://www.datos.gov.co/d/nhmn-fiw8",
+    "download_url": "https://www.datos.gov.co/Educación/VISTA_MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-/nhmn-fiw8"
+  },
+  {
+    "id": "du66-2rxt",
+    "name": "Estadísticas de Educación Preescolar, Básica y Media",
+    "type": "filter",
+    "updated_at": "2026-05-18T17:52:38.000Z",
+    "page_url": "https://www.datos.gov.co/d/du66-2rxt",
+    "download_url": "https://www.datos.gov.co/Educación/Estadísticas-de-Educación-Preescolar-Básica-y-Medi/du66-2rxt"
+  },
+  {
+    "id": "ramx-5wua",
+    "name": "San Luis de Palenque, estadísticas en educación Preescolar, básica y media",
+    "type": "filter",
+    "updated_at": "2026-05-18T18:42:13.000Z",
+    "page_url": "https://www.datos.gov.co/d/ramx-5wua",
+    "download_url": "https://www.datos.gov.co/Educación/San-Luis-de-Palenque-estadísticas-en-educación-Pre/ramx-5wua"
+  },
+  {
+    "id": "s768-uzre",
+    "name": "Estudiantes Matriculados por Circunscripción",
+    "type": "dataset",
+    "updated_at": "2026-09-02T21:41:43.000Z",
+    "page_url": "https://www.datos.gov.co/d/s768-uzre",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-Matriculados-por-Circunscripción/s768-uzre"
+  },
+  {
+    "id": "f3az-685r",
+    "name": "Vista - Arauca - Educación",
+    "type": "filter",
+    "updated_at": "2026-05-18T18:44:21.000Z",
+    "page_url": "https://www.datos.gov.co/d/f3az-685r",
+    "download_url": "https://www.datos.gov.co/Educación/Vista-Arauca-Educación/f3az-685r"
+  },
+  {
+    "id": "762w-xfjj",
+    "name": "VISTA_MEN ESTADISTICAS EN EDUCACIÓN EN PREESCOLAR, BÁSICA Y MEDIA POR MUNICIPIO DEL DEPRAMENTO DLE CAQUETÁ.",
+    "type": "filter",
+    "updated_at": "2026-05-18T16:53:02.000Z",
+    "page_url": "https://www.datos.gov.co/d/762w-xfjj",
+    "download_url": "https://www.datos.gov.co/Educación/VISTA_MEN-ESTADISTICAS-EN-EDUCACIÓN-EN-PREESCOLAR-/762w-xfjj"
+  },
+  {
+    "id": "xcjg-sxmp",
+    "name": "MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-BASICA_SARAVENA",
+    "type": "filter",
+    "updated_at": "2026-05-18T17:35:40.000Z",
+    "page_url": "https://www.datos.gov.co/d/xcjg-sxmp",
+    "download_url": "https://www.datos.gov.co/Educación/MEN_ESTADISTICAS_EN_EDUCACION_EN_PREESCOLAR-BASICA/xcjg-sxmp"
+  },
+  {
+    "id": "k8d2-hwqs",
+    "name": "MATRICULAS - INSTITUCIONES EDUCATIVAS GARZON HUILA",
+    "type": "dataset",
+    "updated_at": "2026-05-18T19:06:37.000Z",
+    "page_url": "https://www.datos.gov.co/d/k8d2-hwqs",
+    "download_url": "https://www.datos.gov.co/Educación/MATRICULAS-INSTITUCIONES-EDUCATIVAS-GARZON-HUILA/k8d2-hwqs"
+  },
+  {
+    "id": "hszb-awzn",
+    "name": "MEN_ESTADISTICAS MATRICULA MUNICIPIO DE SARAVENA",
+    "type": "filter",
+    "updated_at": "2026-06-10T20:12:50.000Z",
+    "page_url": "https://www.datos.gov.co/d/hszb-awzn",
+    "download_url": "https://www.datos.gov.co/Educación/MEN_ESTADISTICAS-MATRICULA-MUNICIPIO-DE-SARAVENA/hszb-awzn"
+  },
+  {
+    "id": "kicq-3gnz",
+    "name": "Estudiantes únicos beneficiados de Bienestar Universitario ESAP",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:22:57.000Z",
+    "page_url": "https://www.datos.gov.co/d/kicq-3gnz",
+    "download_url": "https://www.datos.gov.co/Educación/Estudiantes-únicos-beneficiados-de-Bienestar-Unive/kicq-3gnz"
+  },
+  {
+    "id": "r9qu-a7uc",
+    "name": "Matrícula Estudiantil ITFIP",
+    "type": "dataset",
+    "updated_at": "2026-05-18T18:58:48.000Z",
+    "page_url": "https://www.datos.gov.co/d/r9qu-a7uc",
+    "download_url": "https://www.datos.gov.co/Educación/Matrícula-Estudiantil-ITFIP/r9qu-a7uc"
+  },
+  {
+    "id": "a2nm-cpbq",
+    "name": "EDUCACION CUNDINAMARCA",
+    "type": "federated_href",
+    "updated_at": "2026-05-20T19:25:38.000Z",
+    "page_url": "https://www.datos.gov.co/d/a2nm-cpbq",
+    "download_url": "https://www.datos.gov.co/dataset/EDUCACION-CUNDINAMARCA/a2nm-cpbq"
+  },
+  {
+    "id": "59va-da5r",
+    "name": "Beneficiarios del portafolio de servicios de bienestar universitario  ESAP",
+    "type": "dataset",
+    "updated_at": "2026-05-18T17:34:06.000Z",
+    "page_url": "https://www.datos.gov.co/d/59va-da5r",
+    "download_url": "https://www.datos.gov.co/Educación/Beneficiarios-del-portafolio-de-servicios-de-biene/59va-da5r"
+  },
+  {
+    "id": "46c7-vfwu",
+    "name": "Población Indígena Municipio de Sesquilé",
+    "type": "dataset",
+    "updated_at": "2026-09-11T20:58:34.000Z",
+    "page_url": "https://www.datos.gov.co/d/46c7-vfwu",
+    "download_url": "https://www.datos.gov.co/Inclusión-Social-y-Reconciliación/Población-Indígena-Municipio-de-Sesquilé/46c7-vfwu"
+  },
+  {
+    "id": "96ss-2484",
+    "name": "TOTAL ESTUDIANTES GRADUADOS DE LA UNIVERSIDAD DEL VALLE",
+    "type": "dataset",
+    "updated_at": "2026-09-28T12:32:16.000Z",
+    "page_url": "https://www.datos.gov.co/d/96ss-2484",
+    "download_url": "https://www.datos.gov.co/Educación/TOTAL-ESTUDIANTES-GRADUADOS-DE-LA-UNIVERSIDAD-DEL-/96ss-2484"
+  },
+  {
+    "id": "awag-rid7",
+    "name": "CONJUNTO DE DATOS ESTADISTICO DE ESTUDIANTES GRADUADOS DE LA UNIVERSIDAD POPULAR DEL CESAR",
+    "type": "dataset",
+    "updated_at": "2026-05-18T16:55:10.000Z",
+    "page_url": "https://www.datos.gov.co/d/awag-rid7",
+    "download_url": "https://www.datos.gov.co/Educación/CONJUNTO-DE-DATOS-ESTADISTICO-DE-ESTUDIANTES-GRADU/awag-rid7"
+  },
+  {
+    "id": "ya7f-466y",
+    "name": "Beneficiaros de becas y creditos de programas de acceso a la educación superior de Antioquia",
+    "type": "dataset",
+    "updated_at": "2026-07-29T21:45:57.000Z",
+    "page_url": "https://www.datos.gov.co/d/ya7f-466y",
+    "download_url": "https://www.datos.gov.co/Educación/Beneficiaros-de-becas-y-creditos-de-programas-de-a/ya7f-466y"
+  }
+]
