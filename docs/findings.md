@@ -268,3 +268,63 @@ Podemos calcular TODOS los KPIs necesarios para el proyecto:
 - Analsis de cohorte (TDCA)
 
 El dataset de matriculados de datos.gov.co queda como complemento territorial, pero SPADIES es la fuente principal ahora.
+
+
+---
+
+## Fase A completada: SPADIES silver layer (2026-10-03)
+
+### Resumen del parseo
+
+- 24 hojas parseadas del recurso_19.xlsx
+- 9,723 filas en formato long (parquet 88 KB)
+- 4 metricas x 6 dimensiones = 24 vistas analiticas
+
+### Cobertura temporal por metrica
+
+| Metrica | Anos cubiertos |Descripcion |
+|---|---|---|
+| TDA (Tasa Desercion Anual) | 2010-2024 | 15 anos completos |
+| TAI (Tasa Ausencia Intersemestral) | 2010-2024 | 15 anos completos |
+| TDCA (Cohorte Acumulada) | 2017-2024 | 8 anos (metodologia SPADIES 3) |
+| TGA (Graduacion Acumulada) | 2017-2024 | 8 anos (metodologia SPADIES 3) |
+
+### Dimensiones parseadas (con valores unicos)
+
+- **nivel_formacion**: 5 valores (Universitario, TyT, Tecnico profesional, Tecnologico, Total general)
+- **sexo**: 3-6 valores (segun metrica, incluye agregados)
+- **sector**: 3-6 valores (Oficial, Privado, Total, etc.)
+- **metodologia**: 5-8 valores (Presencial, Virtual, Distancia, Dual, etc.)
+- **area_conocimiento**: 9-10 valores (Agronomia, Bellas Artes, Ciencias, etc.)
+- **departamento**: 34-35 valores (todos los deptos de Colombia)
+
+### Datos REALES extraidos (TDA por nivel formacion)
+
+| Ano | Universitario | TyT | Tecnico prof | Total nacional |
+|---|---|---|---|---|
+| 2010 | 9.88% | 19.45% | 22.46% | 11.79% |
+| 2015 | 9.04% | 13.37% | 21.39% | - |
+| 2019 | 8.25% | 14.84% | 18.05% | - |
+| 2020 | 8.02% | 13.39% | 13.65% | - |
+| 2024 | 8.65% | 15.68% | 17.05% | - |
+
+### Hallazgos clave
+
+1. **Universitario** estable ~9% (siempre el mas bajo)
+2. **Tecnico profesional** historicamente ~20-22%, bajando a ~17% en 2024
+3. **COVID no afecto TDA** como se esperaba (incluso bajaron Tas en 2020)
+4. **TyT** sube en 2024 a 15.68% (preocupante, sube desde 13.4% en 2020)
+5. **TDCA y TGA** solo disponibles desde 2017 (cambio metodologico SPADIES 3)
+
+### Decision tecnica: numpy por defecto en valor
+
+Se encontro bug donde columnas NaN del Excel (cuando header=row no-anio) generaba year_cols fantasma. Se soluciono con:
+- find_header_row() que busca fila con 5+ valores numericos entre 2009-2030
+- pd.to_numeric(errors="coerce") para forzar valor numerico
+- Filtro de strings vacios en dimension_value
+
+### Archivo silver generado
+
+- `etl/data/silver/spadies.parquet` (88 KB, 9723 filas)
+- Schema: `metric, dimension, dimension_value, ano, valor`
+- Listo para consultas analiticas y gold layer
