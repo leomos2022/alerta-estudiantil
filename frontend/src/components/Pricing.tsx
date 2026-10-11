@@ -13,7 +13,7 @@ const TIERS = [
     audience: "Estudiantes de pregrado/posgrado",
     features: [
       "Acceso al repositorio (read-only) por 12 meses",
-      "PDF del informe ejecutivo (40-60 paginas)",
+      "PDF del informe ejecutivo (40-60 páginas)",
       "Dataset limpio en CSV",
       "Notebooks reproducibles",
       "50% OFF con email .edu.co"
@@ -33,7 +33,7 @@ const TIERS = [
       "Acceso al dashboard interactivo por 6 meses",
       "Marts SQL listos para consultas",
       "Diccionario de datos completo",
-      "Citacion sugerida (DOI al publicar)"
+      "Citación sugerida (DOI al publicar)"
     ],
     popular: true
   },
@@ -43,12 +43,12 @@ const TIERS = [
     price_cop: 299000,
     price_display: "$299.000",
     description: "Para IES, facultades, centros",
-    audience: "Universidades, facultades, centros de investigacion",
+    audience: "Universidades, facultades, centros de investigación",
     features: [
       "Todo lo de Profesional, mas:",
       "Licencia de uso interno (hasta 5 usuarios)",
-      "1 hora de consultoria via Google Meet",
-      "Soporte de 30 dias via email",
+      "1 hora de consultoría via Google Meet",
+      "Soporte de 30 días vía email",
       "Exportable a LMS (Moodle, Blackboard)"
     ],
     popular: false
@@ -58,15 +58,15 @@ const TIERS = [
     name: "Gobierno",
     price_cop: 999000,
     price_display: "$999.000",
-    description: "Para entidades publicas",
-    audience: "Ministerios, secretarias, ONG grandes",
+    description: "Para entidades públicas",
+    audience: "Ministerios, secretarías, ONG grandes",
     features: [
       "Todo lo de Institucional, mas:",
       "Licencia extendida (hasta 25 usuarios)",
-      "Personalizacion de KPIs territoriales",
-      "Soporte prioritario 90 dias",
+      "Personalización de KPIs territoriales",
+      "Soporte prioritario 90 días",
       "Acceso anticipado a actualizaciones",
-      "Consultoria de implementacion (3 horas)"
+      "Consultoría de implementación (3 horas)"
     ],
     popular: false
   }
@@ -90,7 +90,7 @@ export function Pricing() {
         >
           {tier.popular && (
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-zinc-900 text-xs font-bold px-3 py-1 rounded-full">
-              MAS POPULAR
+              MÁS POPULAR
             </span>
           )}
           <h3 className="text-lg font-bold text-white mb-1">{tier.name}</h3>

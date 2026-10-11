@@ -67,7 +67,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-white mb-2">La magnitud del problema</h2>
-            <p className="text-zinc-300">Indicadores oficiales del SPADIES - Ministerio de Educacion Nacional</p>
+            <p className="text-zinc-300">Indicadores oficiales del SPADIES - Ministerio de Educación Nacional</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {kpiData && Object.entries(kpiData.kpis).map(([metric, kpi]) => {
@@ -93,14 +93,14 @@ export default function Home() {
       <section id="evolution" className="py-16 px-6 border-t border-zinc-900">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-white mb-2">Evolucion 2010-2024</h2>
-            <p className="text-zinc-300">Tasa de Desercion Anual por nivel de formacion</p>
+            <h2 className="text-3xl font-bold text-white mb-2">Evolución 2010-2024</h2>
+            <p className="text-zinc-300">Tasa de Deserción Anual por nivel de formación</p>
           </div>
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
             {nivelData && <EvolutionChart series={nivelData.series} />}
           </div>
           <p className="text-xs text-zinc-400 mt-4">
-            Fuente: SPADIES - Ministerio de Educacion Nacional - Corte estadistico 2025
+            Fuente: SPADIES - Ministerio de Educacion Nacional - Corte estadístico 2025
           </p>
         </div>
       </section>
@@ -108,8 +108,8 @@ export default function Home() {
       <section id="radiografia" className="py-16 px-6 border-t border-zinc-900">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-white mb-2">Radiografia del desertor</h2>
-            <p className="text-zinc-300">Tasa de Desercion Anual 2024 por distintas dimensiones (promedio entre niveles de formacion)</p>
+            <h2 className="text-3xl font-bold text-white mb-2">Radiografía del desertor</h2>
+            <p className="text-zinc-300">Tasa de Deserción Anual 2024 por distintas dimensiones (promedio entre niveles de formacion)</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
@@ -123,13 +123,13 @@ export default function Home() {
               {sexoData && <BarChartComponent data={sexoData.data} />}
             </div>
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-white mb-1">Por metodologia</h3>
+              <h3 className="text-lg font-semibold text-white mb-1">Por metodología</h3>
               <p className="text-xs text-zinc-400 mb-4">Presencial, Virtual, Distancia, Dual</p>
               {metodologiaData && <BarChartComponent data={metodologiaData.data} />}
             </div>
           </div>
           <p className="text-xs text-zinc-400 mt-4">
-            Fuente: SPADIES - MEN - Corte estadistico 2025 - Valores promedio entre secciones por nivel de formacion
+            Fuente: SPADIES - MEN - Corte estadístico 2025 - Valores promedio entre secciones por nivel de formación
           </p>
         </div>
       </section>
@@ -137,18 +137,18 @@ export default function Home() {
       <section id="donde" className="py-16 px-6 border-t border-zinc-900">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-white mb-2">Donde desertan?</h2>
+            <h2 className="text-3xl font-bold text-white mb-2">¿Dónde desertan?</h2>
             <p className="text-zinc-300">Top 10 y Bottom 10 departamentos por TDA 2024</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-white mb-1">Top 10 departamentos</h3>
-              <p className="text-xs text-zinc-400 mb-4">Mayor tasa de desercion anual</p>
+              <p className="text-xs text-zinc-400 mb-4">Mayor tasa de deserción anual</p>
               {departamentoData && <HorizontalBarChart data={departamentoData.data} limit={10} />}
             </div>
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-white mb-1">Bottom 10 departamentos</h3>
-              <p className="text-xs text-zinc-400 mb-4">Menor tasa de desercion anual</p>
+              <p className="text-xs text-zinc-400 mb-4">Menor tasa de deserción anual</p>
               {departamentoData && (
                 <HorizontalBarChart data={[...departamentoData.data].reverse()} limit={10} />
               )}
@@ -156,12 +156,12 @@ export default function Home() {
           </div>
           <div className="mt-6 bg-amber-400/10 border border-amber-400/30 rounded-lg p-4">
             <p className="text-sm text-amber-300">
-              <strong>Nota:</strong> Departamentos pequenos (Guainia, Vaupes, etc.) pueden mostrar tasas extremas
-              debido al bajo numero de programas/estudiantes. Alta varianza estadistica, no necesariamente crisis.
+              <strong>Nota:</strong> Departamentos pequeños (Guainía, Vaupés, etc.) pueden mostrar tasas extremas
+              debido al bajo número de programas/estudiantes. Alta varianza estadística, no necesariamente crisis.
             </p>
           </div>
           <p className="text-xs text-zinc-400 mt-4">
-            Fuente: SPADIES - MEN - Corte estadistico 2025
+            Fuente: SPADIES - MEN - Corte estadístico 2025
           </p>
         </div>
       </section>
@@ -169,13 +169,13 @@ export default function Home() {
       <section id="porque" className="py-16 px-6 border-t border-zinc-900">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-white mb-2">Por que desertan?</h2>
+            <h2 className="text-3xl font-bold text-white mb-2">¿Por qué desertan?</h2>
             <p className="text-zinc-300">Los 3 factores de riesgo identificados por el SPADIES</p>
           </div>
           <RiskFactors />
           <div className="mt-8 bg-amber-400/10 border border-amber-400/30 rounded-lg p-6">
             <p className="text-sm text-amber-300">
-              <strong>Importante:</strong> El SPADIES no solo mide la desercion pasada, sino que sirve como
+              <strong>Importante:</strong> El SPADIES no solo mide la deserción pasada, sino que sirve como
               herramienta de <strong>alerta temprana</strong>. Las IES pueden identificar estudiantes en alto riesgo
               y activar rutas de apoyo (psicologico, economico o academico) antes de que el estudiante tome la
               decision de retirarse.
@@ -187,12 +187,12 @@ export default function Home() {
       <section id="recomendaciones" className="py-16 px-6 border-t border-zinc-900">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-white mb-2">Que pueden hacer las IES?</h2>
-            <p className="text-zinc-300">Estrategias probadas para reducir la desercion estudiantil</p>
+            <h2 className="text-3xl font-bold text-white mb-2">¿Qué pueden hacer las IES?</h2>
+            <p className="text-zinc-300">Estrategias probadas para reducir la deserción estudiantil</p>
           </div>
           <Recommendations />
           <p className="text-xs text-zinc-400 mt-4">
-            Fuente: SPADIES - Ministerio de Educacion Nacional - Documentos de Gestion de la Permanencia
+            Fuente: SPADIES - Ministerio de Educación Nacional - Documentos de Gestión de la Permanencia
           </p>
         </div>
       </section>
@@ -200,18 +200,18 @@ export default function Home() {
       <section id="cta" className="py-16 px-6 border-t border-zinc-900">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold text-white mb-2">Investigacion completa + repositorio</h2>
-            <p className="text-zinc-300">Adquiere acceso a la investigacion exhaustiva y datos curados por Leonardo Mosquera</p>
+            <h2 className="text-3xl font-bold text-white mb-2">Investigación completa + repositorio</h2>
+            <p className="text-zinc-300">Adquiere acceso a la investigación exhaustiva y datos curados por Leonardo Mosquera</p>
           </div>
           <Pricing />
           <div className="mt-8 text-center text-sm text-zinc-500">
             <p>
-              <strong className="text-zinc-300">Que incluye?</strong> 200+ horas de limpieza y validacion con Pandera,
-              metodologia estandarizada de calculo de desercion por cohorte, marts SQL listos, dashboard interactivo,
+              <strong className="text-zinc-300">¿Qué incluye?</strong> 200+ horas de limpieza y validación con Pandera,
+              metodología estandarizada de cálculo de deserción por cohorte, marts SQL listos, dashboard interactivo,
               repositorio mantenible y reproducible.
             </p>
             <p className="mt-2">
-              Si lo contratas freelance, te cuesta $8M-15M COP y 3 meses. Aqui lo tienes listo hoy.
+              Si lo contratas freelance, te cuesta $8M-15M COP y 3 meses. Aquí lo tienes listo hoy.
             </p>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function Home() {
 
       <footer className="py-8 px-6 border-t border-zinc-900 text-center">
         <p className="text-sm text-zinc-400">
-          Investigacion por Leonardo Mosquera - Ingeniero de Software y Analista de Datos
+          Investigación por Leonardo Mosquera - Ingeniero de Software y Analista de Datos
         </p>
       </footer>
     </main>

@@ -44,19 +44,19 @@ export function Hero({ tda, year }: HeroProps) {
           <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6">
             <span className="text-amber-400">1 de cada {oneInX}</span> estudiantes
             <br />
-            abandona la universidad cada ano
+            abandona la universidad cada año
           </h1>
           <p className="text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto mb-8">
             La tasa de desercion anual en Colombia se ubica en {count.toFixed(2)}% ({year}).
-            Un fenomeno con consecuencias economicas, sociales y personales.
-            Investigacion independiente basada en datos oficiales del Ministerio de Educacion.
+            Un fenomeno con consecuencias económicas, sociales y personales.
+            Investigación independiente basada en datos oficiales del Ministerio de Educación.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#kpi" className="px-6 py-3 bg-amber-400 text-zinc-900 font-semibold rounded-lg hover:bg-amber-300 transition">
               Ver hallazgos
             </a>
             <a href="#cta" className="px-6 py-3 border border-zinc-700 text-zinc-200 font-semibold rounded-lg hover:bg-zinc-800 transition">
-              Investigacion completa - $29.900 COP
+              Investigación completa - $29.900 COP
             </a>
           </div>
         </motion.div>

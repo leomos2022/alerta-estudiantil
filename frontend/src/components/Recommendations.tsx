@@ -11,21 +11,21 @@ const RECOMMENDATIONS = [
     color: "#EF4444",
     description: "Implementar herramientas como SPADIES para identificar estudiantes en riesgo antes de que abandonen",
     actions: [
-      "Monitoreo continuo de variables academicas y socioeconomicas",
-      "Alertas automaticas para estudiantes con bajo rendimiento",
+      "Monitoreo continuo de variables académicas y socioeconómicas",
+      "Alertas automáticas para estudiantes con bajo rendimiento",
       "Dashboards para directores de programa"
     ]
   },
   {
     id: "academico",
-    title: "Acompanamiento Academico",
+    title: "Acompañamiento Académico",
     icon: BookOpen,
     color: "#FFB703",
     description: "Programas estructurados de tutorias y mentorias durante los primeros semestres",
     actions: [
-      "Tutorias personalizadas para estudiantes de alto riesgo",
-      "Cursos remediales en areas criticas (matematicas, lectura)",
-      "Seguimiento individual del progreso academico"
+      "Tutorías personalizadas para estudiantes de alto riesgo",
+      "Cursos remediales en áreas críticas (matematicas, lectura)",
+      "Seguimiento individual del progreso académico"
     ]
   },
   {
@@ -36,7 +36,7 @@ const RECOMMENDATIONS = [
     description: "Ampliar cobertura de becas, creditos y subsidios para estudiantes vulnerables",
     actions: [
       "Becas para estudiantes de estratos 1-3",
-      "Creditos condonables para buen rendimiento",
+      "Créditos condonables para buen rendimiento",
       "Subsidios de transporte y alimentacion"
     ]
   },
@@ -48,7 +48,7 @@ const RECOMMENDATIONS = [
     description: "Fortalecer programas de bienestar integral y acompanamiento psicologico",
     actions: [
       "Atencion psicologica gratuita",
-      "Programas de orientacion socioocupacional",
+      "Programas de orientación socioocupacional",
       "Actividades extracurriculares y deportivas"
     ]
   }

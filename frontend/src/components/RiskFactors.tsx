@@ -6,28 +6,28 @@ import { GraduationCap, Wallet, Building2 } from "lucide-react";
 const FACTORS = [
   {
     id: "academico",
-    title: "Academicos",
+    title: "Académicos",
     icon: GraduationCap,
     color: "#EF4444",
-    description: "Relacionados con el rendimiento academico del estudiante",
+    description: "Relacionados con el rendimiento académico del estudiante",
     items: [
       "Puntajes en pruebas de Estado (ICFES / Saber 11)",
       "Rendimiento en los primeros semestres",
-      "Habitos de estudio deficientes",
-      "Brecha entre expectativas y realidad academica"
+      "Hábitos de estudio deficientes",
+      "Brecha entre expectativas y realidad académica"
     ]
   },
   {
     id: "socioeconomico",
-    title: "Socioeconomicos",
+    title: "Socioeconómicos",
     icon: Wallet,
     color: "#FFB703",
-    description: "Condiciones economicas y sociales del estudiante",
+    description: "Condiciones económicas y sociales del estudiante",
     items: [
-      "Estrato socioeconomico",
+      "Estrato socioeconómico",
       "Nivel de ingresos de la familia",
       "Trabaja mientras estudia",
-      "Acceso a credito (ICETEX) o becas",
+      "Acceso a crédito (ICETEX) o becas",
       "Apoyo familiar limitado"
     ]
   },
@@ -36,13 +36,13 @@ const FACTORS = [
     title: "Institucionales",
     icon: Building2,
     color: "#2DD4BF",
-    description: "Factores relacionados con la institucion educativa",
+    description: "Factores relacionados con la institución educativa",
     items: [
-      "Nivel de acompanamiento institucional",
+      "Nivel de acompañamiento institucional",
       "Programas de bienestar universitario",
-      "Tutorias y mentorias disponibles",
+      "Tutorías y mentorías disponibles",
       "Flexibilidad curricular",
-      "Recursos de apoyo psicologico"
+      "Recursos de apoyo psicológico"
     ]
   }
 ];
