@@ -7,6 +7,7 @@ import { KPICard } from "@/components/KPICard";
 import { EvolutionChart } from "@/components/EvolutionChart";
 import { BarChartComponent } from "@/components/BarChart";
 import { HorizontalBarChart } from "@/components/HorizontalBarChart";
+import { RiskFactors } from "@/components/RiskFactors";
 
 const METRIC_INFO: Record<string, { label: string; description: string }> = {
   TDA: { label: "Tasa de Desercion Anual", description: "% estudiantes que abandonan por ano" },
@@ -160,6 +161,24 @@ export default function Home() {
           <p className="text-xs text-zinc-400 mt-4">
             Fuente: SPADIES - MEN - Corte estadistico 2025
           </p>
+        </div>
+      </section>
+
+      <section id="porque" className="py-16 px-6 border-t border-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white mb-2">Por que desertan?</h2>
+            <p className="text-zinc-300">Los 3 factores de riesgo identificados por el SPADIES</p>
+          </div>
+          <RiskFactors />
+          <div className="mt-8 bg-amber-400/10 border border-amber-400/30 rounded-lg p-6">
+            <p className="text-sm text-amber-300">
+              <strong>Importante:</strong> El SPADIES no solo mide la desercion pasada, sino que sirve como
+              herramienta de <strong>alerta temprana</strong>. Las IES pueden identificar estudiantes en alto riesgo
+              y activar rutas de apoyo (psicologico, economico o academico) antes de que el estudiante tome la
+              decision de retirarse.
+            </p>
+          </div>
         </div>
       </section>
 
