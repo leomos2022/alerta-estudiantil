@@ -128,3 +128,12 @@
     @apply font-sans;
   }
 }
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for sticky navbar */
+section[id] {
+  scroll-margin-top: 5rem;
+}

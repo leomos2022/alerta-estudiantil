@@ -10,6 +10,7 @@ import { HorizontalBarChart } from "@/components/HorizontalBarChart";
 import { RiskFactors } from "@/components/RiskFactors";
 import { Recommendations } from "@/components/Recommendations";
 import { Pricing } from "@/components/Pricing";
+import { VideoSection } from "@/components/VideoSection";
 
 const METRIC_INFO: Record<string, { label: string; description: string }> = {
   TDA: { label: "Tasa de Desercion Anual", description: "% estudiantes que abandonan por ano" },
@@ -62,6 +63,10 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0B0F19]">
       <Hero tda={tdaKpi?.value_pct || 9.78} year={tdaKpi?.latest_year || 2024} />
+
+      <section id="video" className="pt-8 pb-12 px-6 border-t border-zinc-900">
+        <VideoSection />
+      </section>
 
       <section id="kpi" className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
