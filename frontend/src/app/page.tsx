@@ -8,6 +8,8 @@ import { EvolutionChart } from "@/components/EvolutionChart";
 import { BarChartComponent } from "@/components/BarChart";
 import { HorizontalBarChart } from "@/components/HorizontalBarChart";
 import { RiskFactors } from "@/components/RiskFactors";
+import { Recommendations } from "@/components/Recommendations";
+import { Pricing } from "@/components/Pricing";
 
 const METRIC_INFO: Record<string, { label: string; description: string }> = {
   TDA: { label: "Tasa de Desercion Anual", description: "% estudiantes que abandonan por ano" },
@@ -177,6 +179,39 @@ export default function Home() {
               herramienta de <strong>alerta temprana</strong>. Las IES pueden identificar estudiantes en alto riesgo
               y activar rutas de apoyo (psicologico, economico o academico) antes de que el estudiante tome la
               decision de retirarse.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="recomendaciones" className="py-16 px-6 border-t border-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white mb-2">Que pueden hacer las IES?</h2>
+            <p className="text-zinc-300">Estrategias probadas para reducir la desercion estudiantil</p>
+          </div>
+          <Recommendations />
+          <p className="text-xs text-zinc-400 mt-4">
+            Fuente: SPADIES - Ministerio de Educacion Nacional - Documentos de Gestion de la Permanencia
+          </p>
+        </div>
+      </section>
+
+      <section id="cta" className="py-16 px-6 border-t border-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-bold text-white mb-2">Investigacion completa + repositorio</h2>
+            <p className="text-zinc-300">Adquiere acceso a la investigacion exhaustiva y datos curados por Leonardo Mosquera</p>
+          </div>
+          <Pricing />
+          <div className="mt-8 text-center text-sm text-zinc-500">
+            <p>
+              <strong className="text-zinc-300">Que incluye?</strong> 200+ horas de limpieza y validacion con Pandera,
+              metodologia estandarizada de calculo de desercion por cohorte, marts SQL listos, dashboard interactivo,
+              repositorio mantenible y reproducible.
+            </p>
+            <p className="mt-2">
+              Si lo contratas freelance, te cuesta $8M-15M COP y 3 meses. Aqui lo tienes listo hoy.
             </p>
           </div>
         </div>
