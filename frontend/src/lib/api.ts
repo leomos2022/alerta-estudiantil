@@ -36,3 +36,29 @@ export async function fetchStatsNivel(metric: string = "TDA"): Promise<StatsNive
   if (!res.ok) throw new Error("Failed to fetch stats nivel");
   return res.json();
 }
+
+
+export interface DimensionDataPoint {
+  label: string;
+  valor_pct: number;
+}
+
+export interface StatsDimensionResponse {
+  metric: string;
+  dimension: string;
+  ano: number;
+  data: DimensionDataPoint[];
+  source: string;
+}
+
+export async function fetchStatsDimension(
+  dimension: string,
+  metric: string = "TDA",
+  ano?: number
+): Promise<StatsDimensionResponse> {
+  const params = new URLSearchParams({ metric });
+  if (ano) params.append("ano", String(ano));
+  const res = await fetch(API_URL + "/stats/dimension/" + dimension + "?" + params.toString());
+  if (!res.ok) throw new Error("Failed to fetch dimension stats");
+  return res.json();
+}

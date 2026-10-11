@@ -115,9 +115,12 @@ async def stats_by_dimension(
         & (df_spadies["ano"] == ano)
     ]
 
+    # Aggregate by label (multiple values per label due to hierarchical sheets - one per nivel formacion)
+    # Average across secciones to get a representative value per label
+    grouped = df_filtered.groupby("dimension_value")["valor"].mean().reset_index()
     data = [
         {"label": row["dimension_value"], "valor_pct": round(float(row["valor"]), 2)}
-        for _, row in df_filtered.iterrows()
+        for _, row in grouped.iterrows()
     ]
     data.sort(key=lambda x: x["valor_pct"], reverse=True)
 

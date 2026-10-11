@@ -1,10 +1,11 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { fetchKPIs, fetchStatsNivel } from "@/lib/api";
+import { fetchKPIs, fetchStatsNivel, fetchStatsDimension } from "@/lib/api";
 import { Hero } from "@/components/Hero";
 import { KPICard } from "@/components/KPICard";
 import { EvolutionChart } from "@/components/EvolutionChart";
+import { BarChartComponent } from "@/components/BarChart";
 
 const METRIC_INFO: Record<string, { label: string; description: string }> = {
   TDA: { label: "Tasa de Desercion Anual", description: "% estudiantes que abandonan por ano" },
@@ -24,7 +25,22 @@ export default function Home() {
     queryFn: () => fetchStatsNivel("TDA"),
   });
 
-  if (kpiLoading || nivelLoading) {
+  const { data: sectorData } = useQuery({
+    queryKey: ["stats-dim", "sector"],
+    queryFn: () => fetchStatsDimension("sector", "TDA"),
+  });
+
+  const { data: sexoData } = useQuery({
+    queryKey: ["stats-dim", "sexo"],
+    queryFn: () => fetchStatsDimension("sexo", "TDA"),
+  });
+
+  const { data: metodologiaData } = useQuery({
+    queryKey: ["stats-dim", "metodologia"],
+    queryFn: () => fetchStatsDimension("metodologia", "TDA"),
+  });
+
+  if (kpiLoading || nivelLoading || !sectorData || !sexoData || !metodologiaData) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#0B0F19]">
         <div className="text-zinc-400">Cargando datos oficiales SPADIES...</div>
@@ -76,6 +92,35 @@ export default function Home() {
           </div>
           <p className="text-xs text-zinc-400 mt-4">
             Fuente: SPADIES - Ministerio de Educacion Nacional - Corte estadistico 2025
+          </p>
+        </div>
+      </section>
+
+      <section id="radiografia" className="py-16 px-6 border-t border-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white mb-2">Radiografia del desertor</h2>
+            <p className="text-zinc-300">Tasa de Desercion Anual 2024 por distintas dimensiones (promedio entre niveles de formacion)</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-white mb-1">Por sector</h3>
+              <p className="text-xs text-zinc-400 mb-4">Oficial vs Privado</p>
+              {sectorData && <BarChartComponent data={sectorData.data} />}
+            </div>
+            <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-white mb-1">Por sexo</h3>
+              <p className="text-xs text-zinc-400 mb-4">Hombre vs Mujer</p>
+              {sexoData && <BarChartComponent data={sexoData.data} />}
+            </div>
+            <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-white mb-1">Por metodologia</h3>
+              <p className="text-xs text-zinc-400 mb-4">Presencial, Virtual, Distancia, Dual</p>
+              {metodologiaData && <BarChartComponent data={metodologiaData.data} />}
+            </div>
+          </div>
+          <p className="text-xs text-zinc-400 mt-4">
+            Fuente: SPADIES - MEN - Corte estadistico 2025 - Valores promedio entre secciones por nivel de formacion
           </p>
         </div>
       </section>
