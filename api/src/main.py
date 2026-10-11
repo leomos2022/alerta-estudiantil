@@ -6,6 +6,16 @@ import pandas as pd
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 
+
+
+def normalize_text(text: str) -> str:
+    """Quita tildes y normaliza texto para matching (metodologia == metodologia con tilde)."""
+    if not text:
+        return text
+    nfkd = unicodedata.normalize("NFKD", text)
+    return "".join([c for c in nfkd if not unicodedata.combining(c)])
+
+
 app = FastAPI(
     title="Alerta Estudiantil API",
     version="0.2.0",
