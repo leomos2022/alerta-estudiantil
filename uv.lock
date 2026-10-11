@@ -104,7 +104,9 @@ source = { editable = "api" }
 dependencies = [
     { name = "fastapi", extra = ["standard"] },
     { name = "httpx" },
+    { name = "pandas" },
     { name = "psycopg", extra = ["binary"] },
+    { name = "pyarrow" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
     { name = "python-jose", extra = ["cryptography"] },
@@ -126,7 +128,9 @@ dev = [
 requires-dist = [
     { name = "fastapi", extras = ["standard"], specifier = ">=0.141.1" },
     { name = "httpx", specifier = ">=0.28.1" },
+    { name = "pandas", specifier = ">=3.0.6" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.6" },
+    { name = "pyarrow", specifier = ">=25.0.1" },
     { name = "pydantic", specifier = ">=2.13.5" },
     { name = "pydantic-settings", specifier = ">=2.15.0" },
     { name = "python-jose", extras = ["cryptography"], specifier = ">=3.5.0" },
