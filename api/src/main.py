@@ -1,3 +1,4 @@
+import unicodedata
 """Alerta Estudiantil API - sirve KPIs y stats desde SPADIES silver layer."""
 from pathlib import Path
 from typing import Optional
