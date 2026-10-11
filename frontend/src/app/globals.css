@@ -137,3 +137,44 @@ html {
 section[id] {
   scroll-margin-top: 5rem;
 }
+
+/* Accessibility - focus styles */
+*:focus-visible {
+  outline: 2px solid #FFB703;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip to content link for screen readers */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #FFB703;
+  color: #0B0F19;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 8px 0;
+  z-index: 100;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Improved contrast for body text */
+body {
+  color: #E5E7EB;
+}
+
+/* Larger base font size for readability */
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}

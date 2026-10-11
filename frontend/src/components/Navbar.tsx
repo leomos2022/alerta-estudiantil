@@ -7,7 +7,7 @@ import { Menu, X, GraduationCap } from "lucide-react";
 const NAV_LINKS = [
   { href: "#kpi", label: "KPIs" },
   { href: "#evolution", label: "Evolucion" },
-  { href: "#radiografia", label: "Radiografia" },
+  { href: "#radiografía", label: "Radiografia" },
   { href: "#donde", label: "Departamentos" },
   { href: "#porque", label: "Factores" },
   { href: "#recomendaciones", label: "Recomendaciones" },
@@ -36,7 +36,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 text-white font-bold">
+        <a href="#" aria-label="Alerta Estudiantil Colombia - Inicio" className="flex items-center gap-2 text-white font-bold">
           <GraduationCap className="w-5 h-5 text-amber-400" />
           <span className="text-base">Alerta Estudiantil</span>
         </a>
@@ -47,7 +47,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="px-3 py-2 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 rounded-md transition"
+              className="px-3 py-2 text-base text-zinc-300 hover:text-white hover:bg-zinc-800/50 rounded-md transition"
             >
               {link.label}
             </a>
@@ -56,7 +56,7 @@ export function Navbar() {
             href="#cta"
             className="ml-4 px-4 py-2 text-sm font-semibold text-zinc-900 bg-amber-400 rounded-lg hover:bg-amber-300 transition"
           >
-            Investigacion completa
+            Investigación completa
           </a>
         </div>
 
@@ -64,7 +64,7 @@ export function Navbar() {
         <button
           className="lg:hidden text-zinc-300 hover:text-white"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          aria-label="Abrir/cerrar menú de navegación"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -95,7 +95,7 @@ export function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className="mt-2 px-4 py-2 text-sm font-semibold text-zinc-900 bg-amber-400 rounded-lg text-center"
               >
-                Investigacion completa
+                Investigación completa
               </a>
             </div>
           </motion.div>

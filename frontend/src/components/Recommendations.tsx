@@ -17,11 +17,11 @@ const RECOMMENDATIONS = [
     ]
   },
   {
-    id: "academico",
+    id: "académico",
     title: "Acompañamiento Académico",
     icon: BookOpen,
     color: "#FFB703",
-    description: "Programas estructurados de tutorias y mentorias durante los primeros semestres",
+    description: "Programás estructurados de tutorias y mentorias durante los primeros semestres",
     actions: [
       "Tutorías personalizadas para estudiantes de alto riesgo",
       "Cursos remediales en áreas críticas (matematicas, lectura)",
@@ -33,7 +33,7 @@ const RECOMMENDATIONS = [
     title: "Apoyo Financiero",
     icon: DollarSign,
     color: "#2DD4BF",
-    description: "Ampliar cobertura de becas, creditos y subsidios para estudiantes vulnerables",
+    description: "Ampliar cobertura de becas, créditos y subsidios para estudiantes vulnerables",
     actions: [
       "Becas para estudiantes de estratos 1-3",
       "Créditos condonables para buen rendimiento",
@@ -45,10 +45,10 @@ const RECOMMENDATIONS = [
     title: "Bienestar Universitario",
     icon: Heart,
     color: "#A78BFA",
-    description: "Fortalecer programas de bienestar integral y acompanamiento psicologico",
+    description: "Fortalecer programás de bienestar integral y acompañamiento psicologico",
     actions: [
       "Atencion psicologica gratuita",
-      "Programas de orientación socioocupacional",
+      "Programás de orientación socioocupacional",
       "Actividades extracurriculares y deportivas"
     ]
   }

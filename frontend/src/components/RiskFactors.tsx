@@ -5,7 +5,7 @@ import { GraduationCap, Wallet, Building2 } from "lucide-react";
 
 const FACTORS = [
   {
-    id: "academico",
+    id: "académico",
     title: "Académicos",
     icon: GraduationCap,
     color: "#EF4444",
@@ -18,7 +18,7 @@ const FACTORS = [
     ]
   },
   {
-    id: "socioeconomico",
+    id: "socioeconómico",
     title: "Socioeconómicos",
     icon: Wallet,
     color: "#FFB703",
@@ -39,7 +39,7 @@ const FACTORS = [
     description: "Factores relacionados con la institución educativa",
     items: [
       "Nivel de acompañamiento institucional",
-      "Programas de bienestar universitario",
+      "Programás de bienestar universitario",
       "Tutorías y mentorías disponibles",
       "Flexibilidad curricular",
       "Recursos de apoyo psicológico"

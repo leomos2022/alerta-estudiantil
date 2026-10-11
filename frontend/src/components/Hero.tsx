@@ -46,8 +46,8 @@ export function Hero({ tda, year }: HeroProps) {
             <br />
             abandona la universidad cada año
           </h1>
-          <p className="text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto mb-8">
-            La tasa de desercion anual en Colombia se ubica en {count.toFixed(2)}% ({year}).
+          <p className="text-lg md:text-xl text-zinc-200 max-w-2xl mx-auto mb-8">
+            La tasa de deserción anual en Colombia se ubica en {count.toFixed(2)}% ({year}).
             Un fenomeno con consecuencias económicas, sociales y personales.
             Investigación independiente basada en datos oficiales del Ministerio de Educación.
           </p>

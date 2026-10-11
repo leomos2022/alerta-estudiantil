@@ -8,7 +8,7 @@ export function VideoSection() {
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-white mb-2">Demo en video</h2>
-        <p className="text-zinc-300">Presentacion del proyecto por Leonardo Mosquera</p>
+        <p className="text-zinc-300">Presentación del proyecto por Leonardo Mosquera</p>
       </div>
 
       {/* Video placeholder - se reemplaza con iframe de YouTube cuando tengas el video */}
@@ -25,13 +25,13 @@ export function VideoSection() {
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-amber-400/20 border-2 border-amber-400 mb-4 group-hover:scale-110 transition-transform">
             <Play className="w-8 h-8 text-amber-400 ml-1" fill="currentColor" />
           </div>
-          <p className="text-xl font-semibold text-white mb-1">Proximamente</p>
+          <p className="text-xl font-semibold text-white mb-1">Próximamente</p>
           <p className="text-sm text-zinc-400">Video demo de 2-3 min explicando el proyecto</p>
         </div>
 
         <div className="absolute top-4 right-4">
           <span className="px-3 py-1 text-xs font-medium text-amber-400 bg-amber-400/10 border border-amber-400/30 rounded-full">
-            En produccion
+            En producción
           </span>
         </div>
       </motion.div>
@@ -49,11 +49,11 @@ export function VideoSection() {
           </li>
           <li className="flex items-start gap-2">
             <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
-            <span>Demo del dashboard interactivo con 15 anos de datos (2010-2024)</span>
+            <span>Demo del dashboard interactivo con 15 años de datos (2010-2024)</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0" />
-            <span>Como acceder a la investigacion completa + repositorio privado</span>
+            <span>Como acceder a la investigación completa + repositorio privado</span>
           </li>
         </ul>
       </div>

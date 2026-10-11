@@ -15,7 +15,7 @@ interface KPICardProps {
 }
 
 export function KPICard({ metric, label, description, value, year, delta, previousValue }: KPICardProps) {
-  // For desercion metrics: UP is BAD (red), DOWN is GOOD (green)
+  // For deserción metrics: UP is BAD (red), DOWN is GOOD (green)
   const isUp = delta !== null ? delta > 0 : false;
   const TrendIcon = isUp ? TrendingUp : TrendingDown;
   const trendColor = isUp ? "text-red-400" : "text-green-400";
@@ -32,7 +32,7 @@ export function KPICard({ metric, label, description, value, year, delta, previo
         {value.toFixed(2)}%
       </div>
       <div className="text-sm font-medium text-zinc-100 mb-1 font-semibold">{label}</div>
-      <div className="text-xs text-zinc-300 mb-3">{description}</div>
+      <div className="text-sm text-zinc-300 mb-3">{description}</div>
       {delta !== null && previousValue !== null && (
         <div className="flex items-center gap-2 text-xs">
           <TrendIcon className={"h-4 w-4 " + trendColor} />

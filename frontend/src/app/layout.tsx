@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   title: "Alerta Estudiantil Colombia",
-  description: "Investigacion independiente sobre desercion en la educacion superior colombiana",
+  description: "Investigación independiente sobre deserción en la educación superior colombiana",
 };
 
 export default function RootLayout({
@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="es" className={geistSans.variable + " " + geistMono.variable}>
       <body className="bg-[#0B0F19] text-zinc-100 antialiased">
         <Providers>
+          <a href="#main" className="skip-to-content">Saltar al contenido principal</a>
           <Navbar />
           {children}
         </Providers>

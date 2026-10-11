@@ -13,7 +13,7 @@ import { Pricing } from "@/components/Pricing";
 import { VideoSection } from "@/components/VideoSection";
 
 const METRIC_INFO: Record<string, { label: string; description: string }> = {
-  TDA: { label: "Tasa de Desercion Anual", description: "% estudiantes que abandonan por ano" },
+  TDA: { label: "Tasa de Deserción Anual", description: "% estudiantes que abandonan por ano" },
   TAI: { label: "Tasa de Ausencia Intersemestral", description: "% no se matriculan consecutivo" },
   TDCA: { label: "Tasa de Desercion Cohorte Acumulada", description: "Acumulado por cohorte" },
   TGA: { label: "Tasa de Graduacion Acumulada", description: "% que se graduan" },
@@ -40,9 +40,9 @@ export default function Home() {
     queryFn: () => fetchStatsDimension("sexo", "TDA"),
   });
 
-  const { data: metodologiaData } = useQuery({
-    queryKey: ["stats-dim", "metodologia"],
-    queryFn: () => fetchStatsDimension("metodologia", "TDA"),
+  const { data: metodologíaData } = useQuery({
+    queryKey: ["stats-dim", "metodología"],
+    queryFn: () => fetchStatsDimension("metodología", "TDA"),
   });
 
   const { data: departamentoData } = useQuery({
@@ -50,7 +50,7 @@ export default function Home() {
     queryFn: () => fetchStatsDimension("departamento", "TDA"),
   });
 
-  if (kpiLoading || nivelLoading || !sectorData || !sexoData || !metodologiaData || !departamentoData) {
+  if (kpiLoading || nivelLoading || !sectorData || !sexoData || !metodologíaData || !departamentoData) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#0B0F19]">
         <div className="text-zinc-400">Cargando datos oficiales SPADIES...</div>
@@ -61,7 +61,7 @@ export default function Home() {
   const tdaKpi = kpiData?.kpis?.TDA;
 
   return (
-    <main className="min-h-screen bg-[#0B0F19]">
+    <main id="main" className="min-h-screen bg-[#0B0F19]">
       <Hero tda={tdaKpi?.value_pct || 9.78} year={tdaKpi?.latest_year || 2024} />
 
       <section id="video" className="pt-8 pb-12 px-6 border-t border-zinc-900">
@@ -104,36 +104,36 @@ export default function Home() {
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
             {nivelData && <EvolutionChart series={nivelData.series} />}
           </div>
-          <p className="text-xs text-zinc-400 mt-4">
-            Fuente: SPADIES - Ministerio de Educacion Nacional - Corte estadístico 2025
+          <p className="text-sm text-zinc-400 mt-4">
+            Fuente: SPADIES - Ministerio de Educación Nacional - Corte estadístico 2025
           </p>
         </div>
       </section>
 
-      <section id="radiografia" className="py-16 px-6 border-t border-zinc-900">
+      <section id="radiografía" className="py-16 px-6 border-t border-zinc-900">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-white mb-2">Radiografía del desertor</h2>
-            <p className="text-zinc-300">Tasa de Deserción Anual 2024 por distintas dimensiones (promedio entre niveles de formacion)</p>
+            <p className="text-zinc-300">Tasa de Deserción Anual 2024 por distintas dimensiones (promedio entre niveles de formación)</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-white mb-1">Por sector</h3>
-              <p className="text-xs text-zinc-400 mb-4">Oficial vs Privado</p>
+              <p className="text-sm text-zinc-400 mb-4">Oficial vs Privado</p>
               {sectorData && <BarChartComponent data={sectorData.data} />}
             </div>
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-white mb-1">Por sexo</h3>
-              <p className="text-xs text-zinc-400 mb-4">Hombre vs Mujer</p>
+              <p className="text-sm text-zinc-400 mb-4">Hombre vs Mujer</p>
               {sexoData && <BarChartComponent data={sexoData.data} />}
             </div>
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-white mb-1">Por metodología</h3>
-              <p className="text-xs text-zinc-400 mb-4">Presencial, Virtual, Distancia, Dual</p>
-              {metodologiaData && <BarChartComponent data={metodologiaData.data} />}
+              <p className="text-sm text-zinc-400 mb-4">Presencial, Virtual, Distancia, Dual</p>
+              {metodologíaData && <BarChartComponent data={metodologíaData.data} />}
             </div>
           </div>
-          <p className="text-xs text-zinc-400 mt-4">
+          <p className="text-sm text-zinc-400 mt-4">
             Fuente: SPADIES - MEN - Corte estadístico 2025 - Valores promedio entre secciones por nivel de formación
           </p>
         </div>
@@ -148,12 +148,12 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-white mb-1">Top 10 departamentos</h3>
-              <p className="text-xs text-zinc-400 mb-4">Mayor tasa de deserción anual</p>
+              <p className="text-sm text-zinc-400 mb-4">Mayor tasa de deserción anual</p>
               {departamentoData && <HorizontalBarChart data={departamentoData.data} limit={10} />}
             </div>
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-white mb-1">Bottom 10 departamentos</h3>
-              <p className="text-xs text-zinc-400 mb-4">Menor tasa de deserción anual</p>
+              <p className="text-sm text-zinc-400 mb-4">Menor tasa de deserción anual</p>
               {departamentoData && (
                 <HorizontalBarChart data={[...departamentoData.data].reverse()} limit={10} />
               )}
@@ -165,7 +165,7 @@ export default function Home() {
               debido al bajo número de programas/estudiantes. Alta varianza estadística, no necesariamente crisis.
             </p>
           </div>
-          <p className="text-xs text-zinc-400 mt-4">
+          <p className="text-sm text-zinc-400 mt-4">
             Fuente: SPADIES - MEN - Corte estadístico 2025
           </p>
         </div>
@@ -182,8 +182,8 @@ export default function Home() {
             <p className="text-sm text-amber-300">
               <strong>Importante:</strong> El SPADIES no solo mide la deserción pasada, sino que sirve como
               herramienta de <strong>alerta temprana</strong>. Las IES pueden identificar estudiantes en alto riesgo
-              y activar rutas de apoyo (psicologico, economico o academico) antes de que el estudiante tome la
-              decision de retirarse.
+              y activar rutas de apoyo (psicologico, económico o académico) antes de que el estudiante tome la
+              decisión de retirarse.
             </p>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function Home() {
             <p className="text-zinc-300">Estrategias probadas para reducir la deserción estudiantil</p>
           </div>
           <Recommendations />
-          <p className="text-xs text-zinc-400 mt-4">
+          <p className="text-sm text-zinc-400 mt-4">
             Fuente: SPADIES - Ministerio de Educación Nacional - Documentos de Gestión de la Permanencia
           </p>
         </div>
