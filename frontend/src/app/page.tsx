@@ -1,14 +1,90 @@
+"use client";
+
+import { useQuery } from "@tanstack/react-query";
+import { fetchKPIs, fetchStatsNivel } from "@/lib/api";
+import { Hero } from "@/components/Hero";
+import { KPICard } from "@/components/KPICard";
+import { EvolutionChart } from "@/components/EvolutionChart";
+
+const METRIC_INFO: Record<string, { label: string; description: string }> = {
+  TDA: { label: "Tasa de Desercion Anual", description: "% estudiantes que abandonan por ano" },
+  TAI: { label: "Tasa de Ausencia Intersemestral", description: "% no se matriculan consecutivo" },
+  TDCA: { label: "Tasa de Desercion Cohorte Acumulada", description: "Acumulado por cohorte" },
+  TGA: { label: "Tasa de Graduacion Acumulada", description: "% que se graduan" },
+};
+
 export default function Home() {
-  return (
-    <main className="flex min-h-screen items-center justify-center bg-[#0B0F19] text-zinc-100">
-      <div className="text-center">
-        <h1 className="text-6xl font-bold tracking-tight">
-          Alerta Estudiantil
-        </h1>
-        <p className="mt-4 text-zinc-400">
-          Setup completo. Listo para construir.
-        </p>
+  const { data: kpiData, isLoading: kpiLoading } = useQuery({
+    queryKey: ["kpis"],
+    queryFn: fetchKPIs,
+  });
+
+  const { data: nivelData, isLoading: nivelLoading } = useQuery({
+    queryKey: ["stats-nivel", "TDA"],
+    queryFn: () => fetchStatsNivel("TDA"),
+  });
+
+  if (kpiLoading || nivelLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#0B0F19]">
+        <div className="text-zinc-400">Cargando datos oficiales SPADIES...</div>
       </div>
+    );
+  }
+
+  const tdaKpi = kpiData?.kpis?.TDA;
+
+  return (
+    <main className="min-h-screen bg-[#0B0F19]">
+      <Hero tda={tdaKpi?.value_pct || 9.78} year={tdaKpi?.latest_year || 2024} />
+
+      <section id="kpi" className="py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white mb-2">La magnitud del problema</h2>
+            <p className="text-zinc-300">Indicadores oficiales del SPADIES - Ministerio de Educacion Nacional</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {kpiData && Object.entries(kpiData.kpis).map(([metric, kpi]) => {
+              const info = METRIC_INFO[metric];
+              if (!info) return null;
+              return (
+                <KPICard
+                  key={metric}
+                  metric={metric}
+                  label={info.label}
+                  description={info.description}
+                  value={kpi.value_pct}
+                  year={kpi.latest_year}
+                  delta={kpi.delta_pp}
+                  previousValue={kpi.previous_year_value_pct}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section id="evolution" className="py-16 px-6 border-t border-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white mb-2">Evolucion 2010-2024</h2>
+            <p className="text-zinc-300">Tasa de Desercion Anual por nivel de formacion</p>
+          </div>
+          <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
+            {nivelData && <EvolutionChart series={nivelData.series} />}
+          </div>
+          <p className="text-xs text-zinc-400 mt-4">
+            Fuente: SPADIES - Ministerio de Educacion Nacional - Corte estadistico 2025
+          </p>
+        </div>
+      </section>
+
+      <footer className="py-8 px-6 border-t border-zinc-900 text-center">
+        <p className="text-sm text-zinc-400">
+          Investigacion por Leonardo Mosquera - Ingeniero de Software y Analista de Datos
+        </p>
+      </footer>
     </main>
   );
 }
