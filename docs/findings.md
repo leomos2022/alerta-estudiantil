@@ -328,3 +328,41 @@ Se encontro bug donde columnas NaN del Excel (cuando header=row no-anio) generab
 - `etl/data/silver/spadies.parquet` (88 KB, 9723 filas)
 - Schema: `metric, dimension, dimension_value, ano, valor`
 - Listo para consultas analiticas y gold layer
+
+
+---
+
+## Discrepancia con cifras externas (2026-10-03)
+
+Se encontraron referencias externas que citan:
+- Universitario: 12.08%
+- Tecnologico: 20.33%
+- Tecnico profesional: 27.88%
+
+Estos valores son 30-60% mas altos que nuestros datos 2024 del Excel SPADIES oficial:
+- Universitario: 8.65% (vs 12.08% externo)
+- TyT: 15.68% (vs 20.33% externo)
+- Tecnico profesional: 17.05% (vs 27.88% externo)
+
+### Hipotesis:
+
+1. **TDCA vs TDA**: las cifras externas podrian ser Tasa de Desercion Cohorte Acumulada (TDCA), no Tasa de Desercion Anual (TDA). TDCA mide desercion acumulada por cohorte, siempre mayor.
+2. **Cambio metodologico 2019**: SPADIES excluyo SENA del nivel tecnologico desde 2019. Cifras pre-2019 eran mayores.
+3. **Corte estadistico diferente**: podrian ser de un ano previo (2017-2018 tenia cifras mayores).
+
+### Decision para el frontend:
+
+Usamos nuestros datos del Excel SPADIES oficial (corte estadistico 2025, descargado directamente del sitio web del MEN en https://www.mineducacion.gov.co/sistemasdeinformacion/1783/).
+
+Ventajas:
+- Verificables (cualquiera puede bajar el Excel con spadies_download.py)
+- Reproducibles (parquet con 8934 filas, schema documentado)
+- Trazables al source URL y article ID 415244
+
+Desventaja:
+- Difieren de cifras citadas en articulos/presentaciones externas
+
+Mitigacion:
+- Documentar claramente el cutoff temporal y source en el frontend
+- Agregar nota: "Fuente: SPADIES - MEN - corte estadistico 2025"
+- Si aparece pregunta sobre discrepancia, explicar TDCA vs TDA y cambio metodologico 2019
