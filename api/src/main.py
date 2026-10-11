@@ -14,7 +14,9 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # TODO: en prod usar dominio exacto (Spaceship)
+    allow_origins=["*",
+        "https://alerta-estuantil.leomoslab.com"
+    ],  # TODO: en prod usar dominio exacto (Spaceship)
     allow_methods=["*"],
     allow_headers=["*"],
 )
