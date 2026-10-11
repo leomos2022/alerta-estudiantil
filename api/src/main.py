@@ -16,6 +16,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*",
         "https://alerta-estuantil.leomoslab.com"
+    ,
+        "https://alerta-estudiantil.leomoslab.com"
     ],  # TODO: en prod usar dominio exacto (Spaceship)
     allow_methods=["*"],
     allow_headers=["*"],
