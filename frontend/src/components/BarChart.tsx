@@ -38,7 +38,7 @@ export function BarChartComponent({ data, title }: BarChartComponentProps) {
         <Tooltip
           contentStyle={{ backgroundColor: "#18181B", border: "1px solid #27272A", borderRadius: "8px" }}
           labelStyle={{ color: "#FAFAFA" }}
-          formatter={(value: number) => [value.toFixed(2) + "%", "TDA"]}
+          formatter={(value: any) => [Number(value).toFixed(2) + "%", "TDA"]}
         />
         <Bar dataKey="valor_pct" name="TDA" radius={[4, 4, 0, 0]}>
           {sorted.map((_, index) => (
