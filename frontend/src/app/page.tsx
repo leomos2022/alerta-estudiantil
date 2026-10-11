@@ -6,6 +6,7 @@ import { Hero } from "@/components/Hero";
 import { KPICard } from "@/components/KPICard";
 import { EvolutionChart } from "@/components/EvolutionChart";
 import { BarChartComponent } from "@/components/BarChart";
+import { HorizontalBarChart } from "@/components/HorizontalBarChart";
 
 const METRIC_INFO: Record<string, { label: string; description: string }> = {
   TDA: { label: "Tasa de Desercion Anual", description: "% estudiantes que abandonan por ano" },
@@ -40,7 +41,12 @@ export default function Home() {
     queryFn: () => fetchStatsDimension("metodologia", "TDA"),
   });
 
-  if (kpiLoading || nivelLoading || !sectorData || !sexoData || !metodologiaData) {
+  const { data: departamentoData } = useQuery({
+    queryKey: ["stats-dim", "departamento"],
+    queryFn: () => fetchStatsDimension("departamento", "TDA"),
+  });
+
+  if (kpiLoading || nivelLoading || !sectorData || !sexoData || !metodologiaData || !departamentoData) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#0B0F19]">
         <div className="text-zinc-400">Cargando datos oficiales SPADIES...</div>
@@ -121,6 +127,38 @@ export default function Home() {
           </div>
           <p className="text-xs text-zinc-400 mt-4">
             Fuente: SPADIES - MEN - Corte estadistico 2025 - Valores promedio entre secciones por nivel de formacion
+          </p>
+        </div>
+      </section>
+
+      <section id="donde" className="py-16 px-6 border-t border-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white mb-2">Donde desertan?</h2>
+            <p className="text-zinc-300">Top 10 y Bottom 10 departamentos por TDA 2024</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-white mb-1">Top 10 departamentos</h3>
+              <p className="text-xs text-zinc-400 mb-4">Mayor tasa de desercion anual</p>
+              {departamentoData && <HorizontalBarChart data={departamentoData.data} limit={10} />}
+            </div>
+            <div className="bg-zinc-900/50 border border-zinc-800 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-white mb-1">Bottom 10 departamentos</h3>
+              <p className="text-xs text-zinc-400 mb-4">Menor tasa de desercion anual</p>
+              {departamentoData && (
+                <HorizontalBarChart data={[...departamentoData.data].reverse()} limit={10} />
+              )}
+            </div>
+          </div>
+          <div className="mt-6 bg-amber-400/10 border border-amber-400/30 rounded-lg p-4">
+            <p className="text-sm text-amber-300">
+              <strong>Nota:</strong> Departamentos pequenos (Guainia, Vaupes, etc.) pueden mostrar tasas extremas
+              debido al bajo numero de programas/estudiantes. Alta varianza estadistica, no necesariamente crisis.
+            </p>
+          </div>
+          <p className="text-xs text-zinc-400 mt-4">
+            Fuente: SPADIES - MEN - Corte estadistico 2025
           </p>
         </div>
       </section>
