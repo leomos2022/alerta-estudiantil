@@ -110,6 +110,9 @@ async def stats_by_dimension(
     ano: Optional[int] = Query(None, description="Ano especifico. Default: el mas reciente"),
 ):
     """Retorna valores por cualquier dimension (sexo, sector, area_conocimiento, departamento, metodologia) para una metrica y ano."""
+    # Normalizar dimension (quitar tildes) para matching con data
+    dimension = normalize_text(dimension)
+    
     if ano is None:
         ano = int(df_spadies[df_spadies["dimension"] == dimension]["ano"].max())
 
