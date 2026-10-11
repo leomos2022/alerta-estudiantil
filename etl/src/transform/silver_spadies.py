@@ -89,6 +89,21 @@ def parse_sheet(excel_path, sheet_name, metric_code, dimension):
     df_long["valor"] = pd.to_numeric(df_long["valor"], errors="coerce")
     df_long = df_long.dropna(subset=["valor"])
 
+    # Filtrar artifacts: valores imposibles para porcentajes (0-100)
+    df_long = df_long[(df_long["valor"] >= 0) & (df_long["valor"] <= 100)]
+
+    # Filtrar sub-headers que se cuelan como data (texto del header en dimension_value)
+    header_text_map = {
+        "sexo": "Sexo",
+        "sector": "Sector",
+        "metodologia": "Metodologia",
+        "departamento": "Departamento de oferta del programa",
+        "area_conocimiento": "Area de conocimiento",
+    }
+    header_text = header_text_map.get(dimension, "")
+    if header_text:
+        df_long = df_long[~df_long["dimension_value"].str.contains(header_text, case=False, na=False)]
+
     df_long["ano"] = pd.to_numeric(df_long["ano"], errors="coerce")
     df_long = df_long.dropna(subset=["ano"])
     df_long["ano"] = df_long["ano"].astype(int)
