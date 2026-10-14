@@ -25,3 +25,28 @@ Ejecutar: make install && make db
 - make fe - Next.js en :3000
 - make etl - ejecutar pipeline
 - make test - tests
+
+
+## Licencia
+
+MIT License - ver `LICENSE` para detalles.
+
+---
+
+## Copyright
+
+© 2026 Leonardo Mosquera. Todos los derechos reservados.
+
+El codigo esta bajo MIT License. Los datos curados y analisis son propiedad de Leonardo Mosquera.
+El uso comercial de este analisis requiere licencia expresa.
+
+Los datos del SPADIES son publicos del Ministerio de Educacion Nacional.
+Esta investigacion es independiente y no tiene relacion oficial con el MEN.
+
+---
+
+## Articulo de LinkedIn
+
+**"Como construi Alerta Estudiantil Colombia con datos oficiales del MEN"**
+
+Lee el articulo completo: https://www.linkedin.com/pulse/c%C3%B3mo-constru%C3%AD-alerta-estudiantil-colombia-con-datos-del-mosquera-cn4be
