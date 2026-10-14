@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from "./providers";
+import { StructuredData } from "./structured-data";
+import { Navbar } from "@/components/Navbar";
 import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 
@@ -20,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={geistSans.variable + " " + geistMono.variable}>
       <body className="bg-[#0B0F19] text-zinc-100 antialiased">
+        <StructuredData />
         <Providers>
           <a href="#main" className="skip-to-content">Saltar al contenido principal</a>
           <Navbar />
