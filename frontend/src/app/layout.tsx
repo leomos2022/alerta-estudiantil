@@ -32,7 +32,15 @@ export const metadata: Metadata = {
     url: "https://alerta-estudiantil.leomoslab.com",
     siteName: "Alerta Estudiantil Colombia",
     locale: "es_CO",
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: "https://alerta-estudiantil.leomoslab.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Alerta Estudiantil Colombia - Dashboard de desercion universitaria"
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
